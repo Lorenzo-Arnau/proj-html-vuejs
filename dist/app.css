@@ -172,7 +172,6 @@ header .jumbotron-two .lastet-book {
   align-self: flex-end;
   height: 90%;
   width: 35%;
-  background-color: orange;
 }
 header .jumbotron-two .lastet-book .book-image {
   display: flex;
@@ -312,9 +311,51 @@ main .commercial-partner-sec ul {
   align-items: center;
 }
 main .audiobook-sec {
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: 700px;
   background-image: url("../img/banner/banner.jpg");
   background-position: top;
   background-size: cover;
+  align-items: flex-end;
+  justify-content: center;
+}
+main .audiobook-sec-content {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 90%;
+}
+main .audiobook-sec-content-image {
+  width: 45%;
+  height: 100%;
+}
+main .audiobook-sec-content-desc {
+  width: 40%;
+  height: 70%;
+  align-self: flex-end;
+  text-align: center;
+}
+main .audiobook-sec-content-desc h2 {
+  font-size: 35px;
+  color: #FFFFFF;
+}
+main .audiobook-sec-content-desc h4 {
+  margin-top: 25px;
+  text-transform: uppercase;
+  color: #F3B329;
+}
+main .audiobook-sec-content-desc p {
+  margin-top: 18px;
+  color: #BEC6BE;
+}
+main .audiobook-sec-content-desc ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  width: 100%;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
 }

@@ -43,3 +43,8 @@
     color: $brandGold;
     font-family: $fontCoursive;
 }
+@mixin pageSubtitleH4Gold {
+    margin-top: 25px;
+    text-transform: uppercase;
+    color: $brandSaffron;
+}

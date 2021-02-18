@@ -165,7 +165,6 @@ header{
             align-self: flex-end;
             height: 90%;
             width: 35%;
-            background-color: orange;
 
             .book-image{
                 @include flex-row;
@@ -193,9 +192,7 @@ header{
                         color: $brandBlack;
                     }
                     h4{
-                        margin-top: 25px;
-                        text-transform: uppercase;
-                        color: $brandSaffron;
+                       @include pageSubtitleH4Gold;
                     }
                     p{
                         margin-top: 12px;
@@ -285,11 +282,52 @@ main{
         }
     }
     .audiobook-sec{
+        @include flex-row;
         width: 100%;
         height: 700px;
         background-image: url("../img/banner/banner.jpg");
         background-position: top;
         background-size: cover;
+        align-items: flex-end;
+        justify-content: center;
+
+        &-content{
+            @include flex-row;
+            width: 70%;
+            height: 90%;
+
+            &-image{
+                width: 45%;
+                height: 100%;
+            }
+            &-desc{
+               width: 40%;
+               height: 70%;
+               align-self: flex-end;
+               text-align: center;
+               h2{
+                   font-size: 35px;
+                   color: $brandWhite;
+               }
+               h4{
+                   @include pageSubtitleH4Gold;
+               }
+               p{
+                   margin-top: 18px;
+                   color: $brandPumice;
+
+               }
+
+               ul{
+                @include flex-row;
+                margin-top: 40px;
+                width: 100%;
+                list-style: none;
+                justify-content: space-around;
+                align-items: center;
+               }
+            }
+        }
     }
 
 }
