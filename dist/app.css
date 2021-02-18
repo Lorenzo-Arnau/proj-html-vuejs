@@ -331,6 +331,9 @@ main .audiobook-sec-content-image {
   width: 45%;
   height: 100%;
 }
+main .audiobook-sec-content-image img {
+  width: 100%;
+}
 main .audiobook-sec-content-desc {
   width: 40%;
   height: 70%;
