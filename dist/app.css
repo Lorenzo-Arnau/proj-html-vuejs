@@ -65,13 +65,13 @@ header .jumbotron-one {
 header .jumbotron-one .author-name {
   display: flex;
   flex-direction: row;
+  color: #E1AA40;
+  font-family: "Kristi", cursive;
   justify-content: flex-end;
   align-items: flex-end;
   margin-left: 4px;
   height: 100%;
   width: 25%;
-  font-family: "Kristi", cursive;
-  color: #E1AA40;
   font-size: 50px;
 }
 header .jumbotron-one .demo-price {
@@ -109,7 +109,7 @@ header .jumbotron-one .demo-price .price {
   cursor: pointer;
 }
 header .jumbotron-one .demo-price .price span:first-child {
-  font-size: 8px;
+  font-size: 12px;
   vertical-align: top;
 }
 header .jumbotron-one .demo-price .price span:nth-child(3) {
@@ -150,6 +150,7 @@ header .jumbotron-two .journal-desc .jumbotron-controls .left {
   align-items: center;
   justify-content: center;
   width: 48%;
+  cursor: pointer;
   background-color: rgba(0, 0, 0, 0.7);
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
@@ -160,6 +161,7 @@ header .jumbotron-two .journal-desc .jumbotron-controls .right {
   align-items: center;
   justify-content: center;
   width: 48%;
+  cursor: pointer;
   background-color: rgba(0, 0, 0, 0.7);
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
@@ -254,4 +256,41 @@ header .jumbotron-two .lastet-book .buy-on-sec-button-container .button-amazon {
   justify-content: center;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  font-family: "DM Sans", sans-serif;
+}
+main .author-meet-sec {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-self: center;
+  height: 400px;
+  justify-content: center;
+  text-align: center;
+}
+main .author-meet-sec h2 {
+  color: #E1AA40;
+  font-family: "Kristi", cursive;
+  font-size: 65px;
+  margin-bottom: 35px;
+}
+main .author-meet-sec p {
+  font-size: 30px;
+  font-weight: bold;
+  color: #030303;
+  line-height: 45px;
+}
+main .author-meet-sec button {
+  align-self: center;
+  width: 150px;
+  height: 45px;
+  margin-top: 45px;
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  background-color: #3DA698;
 }

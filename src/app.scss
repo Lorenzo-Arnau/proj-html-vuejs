@@ -4,6 +4,7 @@
 *{
     @include reset;
 }
+//header start
 header{
     @include flex-col;
     font-family: $pageFont;
@@ -63,13 +64,12 @@ header{
 
         .author-name{
             @include flex-row;
+            @include coursiveTitle;
             justify-content: flex-end;
             align-items: flex-end;
             margin-left: 4px;
             height: 100%;
             width: 25%;
-            font-family: $fontCoursive;
-            color: $brandGold;
             font-size: 50px;
         }
 
@@ -108,7 +108,7 @@ header{
                 cursor: pointer;
 
                 span:first-child{
-                    font-size: 8px;
+                    font-size: 12px;
                     vertical-align: top;
                 }
                 span:nth-child(3){
@@ -237,6 +237,36 @@ header{
                     }
                 }
             }
+        }
+    }
+
+}
+//header end
+
+//main start
+main{
+    @include flex-col;
+    font-family: $pageFont;
+    .author-meet-sec{
+        @include flex-col;
+        width: 70%;
+        align-self: center;
+        height: 400px;
+        justify-content: center;
+        text-align: center;
+        h2{
+           @include coursiveTitle;
+            font-size: 65px;
+            margin-bottom: 35px;
+        }
+        p{
+            font-size: 30px;
+            font-weight: bold;
+            color: $brandBlack;
+            line-height: 45px;
+        }
+        button{
+           @include page-button-style;
         }
     }
 
