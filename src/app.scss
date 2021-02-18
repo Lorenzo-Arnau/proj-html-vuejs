@@ -76,13 +76,13 @@ header{
         .demo-price{
             @include flex-col;
             height: 100%;
-            width: 250px;
+            width: 50px;
             align-items: flex-end;
             justify-content: space-between;
         
             .demo{
                 height: 48%;
-                width: 22%;
+                width: 100%;
                 background-color: $brandWhite;
                 text-align: center;
                 margin-right: 10px;
@@ -98,7 +98,7 @@ header{
             }
             .price{
                 height: 48%;
-                width: 22%;
+                width: 100%;
                 background-color:$brandWhite;
                 text-align: center;
                 font-size: 22px;
@@ -180,7 +180,7 @@ header{
                     width: 50%;                 
 
                     img{
-                        height: 75%;
+                        width: 70%;
                     }
                 }
                
@@ -268,6 +268,28 @@ main{
         button{
            @include page-button-style;
         }
+    }
+    .commercial-partner-sec{
+        @include flex-row;
+        width: 100%;
+        height: 140px;
+        justify-content: center;
+        background-color: $brandPink;
+        ul{
+            @include flex-row;
+            width: 50%;
+            height: 100%;
+            list-style: none;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+    .audiobook-sec{
+        width: 100%;
+        height: 700px;
+        background-image: url("../img/banner/banner.jpg");
+        background-position: top;
+        background-size: cover;
     }
 
 }

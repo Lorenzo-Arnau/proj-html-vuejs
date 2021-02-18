@@ -78,13 +78,13 @@ header .jumbotron-one .demo-price {
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 250px;
+  width: 50px;
   align-items: flex-end;
   justify-content: space-between;
 }
 header .jumbotron-one .demo-price .demo {
   height: 48%;
-  width: 22%;
+  width: 100%;
   background-color: #FFFFFF;
   text-align: center;
   margin-right: 10px;
@@ -99,7 +99,7 @@ header .jumbotron-one .demo-price .demo span {
 }
 header .jumbotron-one .demo-price .price {
   height: 48%;
-  width: 22%;
+  width: 100%;
   background-color: #FFFFFF;
   text-align: center;
   font-size: 22px;
@@ -189,7 +189,7 @@ header .jumbotron-two .lastet-book .book-image-container {
   width: 50%;
 }
 header .jumbotron-two .lastet-book .book-image-container img {
-  height: 75%;
+  width: 70%;
 }
 header .jumbotron-two .lastet-book .book-image .book-release {
   width: 50%;
@@ -293,4 +293,28 @@ main .author-meet-sec button {
   border-radius: 10px;
   color: #FFFFFF;
   background-color: #3DA698;
+}
+main .commercial-partner-sec {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 140px;
+  justify-content: center;
+  background-color: #F3ECE3;
+}
+main .commercial-partner-sec ul {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 100%;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+main .audiobook-sec {
+  width: 100%;
+  height: 700px;
+  background-image: url("../img/banner/banner.jpg");
+  background-position: top;
+  background-size: cover;
 }
