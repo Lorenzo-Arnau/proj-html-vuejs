@@ -29,6 +29,10 @@
     align-items: center;
     justify-content: center;
 }
+@mixin buy-button-hover {
+    background-color: $brandWhite;
+    border: 1px groove $brandCyano;
+}
 @mixin page-button-style {
     align-self: center;
     width: 150px;
@@ -37,6 +41,7 @@
     border: none;
     border-radius: 10px;
     color: $brandWhite;
+    cursor: pointer;
     background-color: $brandCyano;
 }
 @mixin coursiveTitle {

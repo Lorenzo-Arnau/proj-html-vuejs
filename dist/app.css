@@ -128,6 +128,7 @@ header .jumbotron-two .journal-desc {
   height: 100%;
   width: 55%;
   color: #FFFFFF;
+  font-family: "DM Serif Display", serif;
 }
 header .jumbotron-two .journal-desc h2 {
   font-size: 40px;
@@ -197,6 +198,7 @@ header .jumbotron-two .lastet-book .book-image .book-release h3 {
   margin-top: 55px;
   font-size: 25px;
   color: #030303;
+  font-family: "DM Serif Display", serif;
 }
 header .jumbotron-two .lastet-book .book-image .book-release h4 {
   margin-top: 25px;
@@ -242,6 +244,10 @@ header .jumbotron-two .lastet-book .buy-on-sec-button-container .button-appstore
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
 }
+header .jumbotron-two .lastet-book .buy-on-sec-button-container .button-appstore:hover {
+  background-color: #FFFFFF;
+  border: 1px groove #3DA698;
+}
 header .jumbotron-two .lastet-book .buy-on-sec-button-container .button-amazon {
   width: 50%;
   height: 100%;
@@ -255,6 +261,10 @@ header .jumbotron-two .lastet-book .buy-on-sec-button-container .button-amazon {
   justify-content: center;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
+}
+header .jumbotron-two .lastet-book .buy-on-sec-button-container .button-amazon:hover {
+  background-color: #FFFFFF;
+  border: 1px groove #3DA698;
 }
 
 main {
@@ -291,7 +301,11 @@ main .author-meet-sec button {
   border: none;
   border-radius: 10px;
   color: #FFFFFF;
+  cursor: pointer;
   background-color: #3DA698;
+}
+main .author-meet-sec button:hover {
+  background-color: #027986;
 }
 main .commercial-partner-sec {
   display: flex;
@@ -332,6 +346,7 @@ main .audiobook-sec-content-image {
   height: 100%;
 }
 main .audiobook-sec-content-image img {
+  height: 100%;
   width: 100%;
 }
 main .audiobook-sec-content-desc {
@@ -343,6 +358,7 @@ main .audiobook-sec-content-desc {
 main .audiobook-sec-content-desc h2 {
   font-size: 35px;
   color: #FFFFFF;
+  font-family: "DM Serif Display", serif;
 }
 main .audiobook-sec-content-desc h4 {
   margin-top: 25px;

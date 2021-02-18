@@ -131,6 +131,7 @@ header{
             height: 100%;
             width: 55%;
             color: $brandWhite;
+            font-family: $journalFont;
             h2{
                 font-size: 40px;
                 margin-bottom: 40px;
@@ -190,6 +191,7 @@ header{
                         margin-top: 55px;
                         font-size: 25px;
                         color: $brandBlack;
+                        font-family: $journalFont;
                     }
                     h4{
                        @include pageSubtitleH4Gold;
@@ -224,13 +226,18 @@ header{
                         @include buy-button-style;
                         border-bottom-left-radius:5px ;
                         border-top-left-radius: 5px;
+                        &:hover{
+                           @include buy-button-hover;
+                        }
                        
                     }
                     .button-amazon{
                         @include buy-button-style;
                         border-bottom-right-radius:5px ;
                         border-top-right-radius: 5px;
-                        
+                        &:hover{
+                            @include buy-button-hover;
+                        }
                     }
                 }
             }
@@ -264,6 +271,10 @@ main{
         }
         button{
            @include page-button-style;
+
+           &:hover{
+            background-color: $brandLagoon;
+           }
         }
     }
     .commercial-partner-sec{
@@ -300,6 +311,7 @@ main{
                 width: 45%;
                 height: 100%;
                 img{
+                    height:100%;
                     width: 100%;
                 }
             }
@@ -311,6 +323,7 @@ main{
                h2{
                    font-size: 35px;
                    color: $brandWhite;
+                   font-family: $journalFont;
                }
                h4{
                    @include pageSubtitleH4Gold;
