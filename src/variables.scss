@@ -3,3 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+@mixin jumbotron-controls {
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+}
+@mixin buy-button-style {
+    width: 50%;
+    height: 100%;
+    border: 1px groove $brandBuyButtoncolor;
+    cursor: pointer;
+    background-color: #F5FCFA;
+    box-shadow: 0px 0px 18px $brandFount;
+    @include flex-row;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,5 +1,244 @@
 @import "palette";
 @import "variables";
+@import "typography";
 *{
     @include reset;
+}
+header{
+    @include flex-col;
+    font-family: $pageFont;
+    width: 100%;
+    height: 800px;
+    background-image: url("../img/hero/hero-07-2x.jpg");
+    background-position: center;
+    background-size: cover;
+
+    .navbar{
+        @include flex-row;
+        width: 80%;
+        justify-content: space-between;
+        height: 200px;
+        margin:0 auto ;
+
+        ul{
+            @include flex-row;
+            list-style: none;
+            justify-content: space-between;
+            align-items: center;
+            height:100%;
+        }
+        ul li{
+            line-height: 70px;
+            color: $brandWhite;
+            cursor: pointer;
+            &:hover{             
+                border-top: 6px solid $brandSaffron;
+                color: $brandSaffron;
+            }
+        }     
+
+        &-logo{
+            @include flex-row;
+            height: 100%;
+            width: 250px;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        &-menu{
+            width: 50%;
+            height: 35%;
+            margin-right: 40px;
+            justify-self: flex-end;
+        }
+    }
+
+    .jumbotron-one{
+        @include flex-row;
+        margin-top: 30px;
+        width: 90%;
+        height: 120px;
+        align-self: flex-end;
+        justify-content: space-between;
+
+        .author-name{
+            @include flex-row;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-left: 4px;
+            height: 100%;
+            width: 25%;
+            font-family: $fontCoursive;
+            color: $brandGold;
+            font-size: 50px;
+        }
+
+        .demo-price{
+            @include flex-col;
+            height: 100%;
+            width: 250px;
+            align-items: flex-end;
+            justify-content: space-between;
+        
+            .demo{
+                height: 48%;
+                width: 22%;
+                background-color: $brandWhite;
+                text-align: center;
+                margin-right: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+
+                i{
+                    font-size: 25px;
+                }
+                span{
+                    font-size: 12px;
+                }
+            }
+            .price{
+                height: 48%;
+                width: 22%;
+                background-color:$brandWhite;
+                text-align: center;
+                font-size: 22px;
+                margin-right: 10px;
+                border-radius: 5px;
+                color: #65BC7B;
+                cursor: pointer;
+
+                span:first-child{
+                    font-size: 8px;
+                    vertical-align: top;
+                }
+                span:nth-child(3){
+                    font-size: 12px;
+                    color: $brandBlack;
+                }
+            }
+        }
+
+    }
+
+    .jumbotron-two{
+        @include flex-row;
+        width: 90%;
+        height: calc(100% - 320px);
+        align-self: flex-end;
+        justify-content: flex-end;
+
+        .journal-desc{
+            height: 100%;
+            width: 55%;
+            color: $brandWhite;
+            h2{
+                font-size: 40px;
+                margin-bottom: 40px;
+            }
+            span{
+                color: $brandPumice;
+            }
+            
+            .jumbotron-controls{
+                @include flex-row;
+                margin-top: 50px;
+                width: 120px;
+                height: 50px;
+                justify-content: space-between;
+
+                .left{
+                    @include flex-row;
+                    @include jumbotron-controls;
+                    border-bottom-left-radius:5px ;
+                    border-top-left-radius: 5px;
+                }
+                .right{
+                    @include flex-row;
+                    @include jumbotron-controls;
+                    border-bottom-right-radius:5px ;
+                    border-top-right-radius: 5px;
+                }
+            }
+        }
+        .lastet-book{
+            @include flex-col;
+            align-self: flex-end;
+            height: 90%;
+            width: 35%;
+            background-color: orange;
+
+            .book-image{
+                @include flex-row;
+                width: 100%;
+                height: 70%;
+                background-color:$brandWhite;
+
+                &-container{
+                    @include flex-row;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    width: 50%;                 
+
+                    img{
+                        height: 75%;
+                    }
+                }
+               
+                .book-release{
+                    width: 50%;  
+                    
+                    h3{
+                        margin-top: 55px;
+                        font-size: 25px;
+                        color: $brandBlack;
+                    }
+                    h4{
+                        margin-top: 25px;
+                        text-transform: uppercase;
+                        color: $brandSaffron;
+                    }
+                    p{
+                        margin-top: 12px;
+                        padding-right: 50px;
+                        color: $brandGrey;
+                    }
+                }
+                
+            }
+            .buy-on-sec{
+                @include flex-row;
+                width: 100%;
+                height: 30%;
+                background-color: $brandWhite;
+                align-items: center;
+                justify-content: center;
+
+                &-button-container{
+                    @include flex-row;
+                    width: 80%;
+                    height: 55%;
+                    background-color: orange;
+                    text-align: center;
+                    i{
+                        margin-right: 10px;
+                        vertical-align: middle;
+                    }
+
+                    .button-appstore{
+                        @include buy-button-style;
+                        border-bottom-left-radius:5px ;
+                        border-top-left-radius: 5px;
+                       
+                    }
+                    .button-amazon{
+                        @include buy-button-style;
+                        border-bottom-right-radius:5px ;
+                        border-top-right-radius: 5px;
+                        
+                    }
+                }
+            }
+        }
+    }
+
 }

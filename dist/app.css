@@ -3,3 +3,256 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+header {
+  display: flex;
+  flex-direction: column;
+  font-family: "DM Sans", sans-serif;
+  width: 100%;
+  height: 800px;
+  background-image: url("../img/hero/hero-07-2x.jpg");
+  background-position: center;
+  background-size: cover;
+}
+header .navbar {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+  height: 200px;
+  margin: 0 auto;
+}
+header .navbar ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header .navbar ul li {
+  line-height: 70px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+header .navbar ul li:hover {
+  border-top: 6px solid #F3B329;
+  color: #F3B329;
+}
+header .navbar-logo {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+}
+header .navbar-menu {
+  width: 50%;
+  height: 35%;
+  margin-right: 40px;
+  justify-self: flex-end;
+}
+header .jumbotron-one {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  width: 90%;
+  height: 120px;
+  align-self: flex-end;
+  justify-content: space-between;
+}
+header .jumbotron-one .author-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-left: 4px;
+  height: 100%;
+  width: 25%;
+  font-family: "Kristi", cursive;
+  color: #E1AA40;
+  font-size: 50px;
+}
+header .jumbotron-one .demo-price {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 250px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+header .jumbotron-one .demo-price .demo {
+  height: 48%;
+  width: 22%;
+  background-color: #FFFFFF;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+header .jumbotron-one .demo-price .demo i {
+  font-size: 25px;
+}
+header .jumbotron-one .demo-price .demo span {
+  font-size: 12px;
+}
+header .jumbotron-one .demo-price .price {
+  height: 48%;
+  width: 22%;
+  background-color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  margin-right: 10px;
+  border-radius: 5px;
+  color: #65BC7B;
+  cursor: pointer;
+}
+header .jumbotron-one .demo-price .price span:first-child {
+  font-size: 8px;
+  vertical-align: top;
+}
+header .jumbotron-one .demo-price .price span:nth-child(3) {
+  font-size: 12px;
+  color: #030303;
+}
+header .jumbotron-two {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: calc(100% - 320px);
+  align-self: flex-end;
+  justify-content: flex-end;
+}
+header .jumbotron-two .journal-desc {
+  height: 100%;
+  width: 55%;
+  color: #FFFFFF;
+}
+header .jumbotron-two .journal-desc h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+header .jumbotron-two .journal-desc span {
+  color: #BEC6BE;
+}
+header .jumbotron-two .journal-desc .jumbotron-controls {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  width: 120px;
+  height: 50px;
+  justify-content: space-between;
+}
+header .jumbotron-two .journal-desc .jumbotron-controls .left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 48%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+header .jumbotron-two .journal-desc .jumbotron-controls .right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 48%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+header .jumbotron-two .lastet-book {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  height: 90%;
+  width: 35%;
+  background-color: orange;
+}
+header .jumbotron-two .lastet-book .book-image {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70%;
+  background-color: #FFFFFF;
+}
+header .jumbotron-two .lastet-book .book-image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 50%;
+}
+header .jumbotron-two .lastet-book .book-image-container img {
+  height: 75%;
+}
+header .jumbotron-two .lastet-book .book-image .book-release {
+  width: 50%;
+}
+header .jumbotron-two .lastet-book .book-image .book-release h3 {
+  margin-top: 55px;
+  font-size: 25px;
+  color: #030303;
+}
+header .jumbotron-two .lastet-book .book-image .book-release h4 {
+  margin-top: 25px;
+  text-transform: uppercase;
+  color: #F3B329;
+}
+header .jumbotron-two .lastet-book .book-image .book-release p {
+  margin-top: 12px;
+  padding-right: 50px;
+  color: #434343;
+}
+header .jumbotron-two .lastet-book .buy-on-sec {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30%;
+  background-color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+}
+header .jumbotron-two .lastet-book .buy-on-sec-button-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 55%;
+  background-color: orange;
+  text-align: center;
+}
+header .jumbotron-two .lastet-book .buy-on-sec-button-container i {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+header .jumbotron-two .lastet-book .buy-on-sec-button-container .button-appstore {
+  width: 50%;
+  height: 100%;
+  border: 1px groove #A4D2C2;
+  cursor: pointer;
+  background-color: #F5FCFA;
+  box-shadow: 0px 0px 18px #51BFC7;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+header .jumbotron-two .lastet-book .buy-on-sec-button-container .button-amazon {
+  width: 50%;
+  height: 100%;
+  border: 1px groove #A4D2C2;
+  cursor: pointer;
+  background-color: #F5FCFA;
+  box-shadow: 0px 0px 18px #51BFC7;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}

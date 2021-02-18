@@ -15,7 +15,78 @@
 </head>
 <body>
     <div id="root">
+        <!-- start header -->
+        <header>
+              <!-- start navbar -->
+            <div class="navbar">
+                <div class="navbar-logo">
+                    <img src="img/author-logo/author-logo-round-200x205.png" alt="">
+                </div>
+                <div class="navbar-menu">
+                    <ul>
+                        <li v-for="element in firstMenu">{{element}}</li>
+                        <li><i class="fas fa-shopping-cart"></i></li>
+                    </ul>
+                </div>
+            </div>
+             <!-- start navbar -->
 
+              <!-- start jumbotron -->
+            <div class="jumbotron-one">
+                <div class="author-name">
+                    <h2>Damon Vaughn</h2>
+                </div>
+                <div class="demo-price">
+                    <div class="demo">
+                        <i class="fab fa-wordpress"></i>
+                        <span>Demos</span>
+                    </div>
+                    <div class="price">
+                        <span>$</span>
+                        <span>{{price}}</span>
+                        <span>OnSale</span>
+                    </div>
+                </div>
+            </div>
+            <div class="jumbotron-two">
+                <div class="journal-desc">
+                    <h2>Best-selling author and the most <br> influential public intellectual in the <br> western world right now.</h2>
+                    <span>-The New York Times</span>
+                    <div class="jumbotron-controls">
+                        <div class="left"><i class="fas fa-arrow-left"></i></div>
+                        <div class="right"><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <div class="lastet-book">
+                    <div class="book-image">
+                        <div class="book-image-container">
+                            <img src="img/book/book-widget.png" alt="">
+                        </div>
+                        <div class="book-release">
+                            <h3>Lastet Book Release</h3>
+                            <h4>D. Vaughn Autobiography</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus totam sed consequuntur corrupti perferendis id, </p>
+                        </div>
+                    </div>
+                    <div class="buy-on-sec">
+                        <div class="buy-on-sec-button-container">
+                            <div class="button-appstore">
+                                <i class="fab fa-amazon"></i> Buy On Amazon
+                            </div>
+                            <div class="button-amazon">
+                                <i class="fab fa-apple"></i> Buy On AppStore
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- start jumbotron -->
+        </header>
+  <!-- start header -->
 
 
 
