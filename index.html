@@ -26,7 +26,7 @@
                 </div>
                 <div class="navbar-menu">
                     <ul>
-                        <li v-for="element in firstMenu">{{element}}</li>
+                        <li v-for="element in firstMenu">{{element.name}}</li>
                         <li><i class="fas fa-shopping-cart"></i></li>
                     </ul>
                 </div>
@@ -44,8 +44,7 @@
                         <span>Demos</span>
                     </div>
                     <div class="price">
-                        <span>$</span>
-                        <span>{{price}}</span>
+                        <span><sup>$</sup>{{price}}</span>
                         <span>OnSale</span>
                     </div>
                 </div>
@@ -177,6 +176,11 @@
                 
             </div>
 
+        </section>
+        <section class="newsletter-sec">
+            <div class="newsletter-sec-content">
+
+            </div>
         </section>
     </main>
 

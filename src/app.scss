@@ -77,11 +77,13 @@ header{
         .demo-price{
             @include flex-col;
             height: 100%;
-            width: 50px;
+            width: 60px;
             align-items: flex-end;
             justify-content: space-between;
         
             .demo{
+                @include flex-col;
+                justify-content: center;
                 height: 48%;
                 width: 100%;
                 background-color: $brandWhite;
@@ -98,21 +100,23 @@ header{
                 }
             }
             .price{
+                @include flex-col;
+                justify-content: center;
                 height: 48%;
                 width: 100%;
                 background-color:$brandWhite;
                 text-align: center;
-                font-size: 22px;
+                font-size: 25px;
                 margin-right: 10px;
                 border-radius: 5px;
                 color: #65BC7B;
                 cursor: pointer;
 
-                span:first-child{
+                sup{
                     font-size: 12px;
-                    vertical-align: top;
+                    
                 }
-                span:nth-child(3){
+                span:nth-child(2){
                     font-size: 12px;
                     color: $brandBlack;
                 }
@@ -377,7 +381,7 @@ main{
                     background-color: $brandSaffron;
                     margin-top: 0;
                     &:hover{
-                        background-color: $brandGold;
+                        background-color: $brandSaffronLight;
                     }
                 }
             }
@@ -447,6 +451,20 @@ main{
                 }
                 .crities-journal-first,.crities-journal-second{
                    @include crities-journal-style;
+                   h2{
+                    font-family: $journalFont;
+                    }
+                    p{
+                    padding-top: 20px;
+                    color: $brandGrey;
+                    }
+                    i{
+                    position: absolute;
+                    bottom: -22px;
+                    left: 40px;
+                    font-size: 40px;
+                    color: $brandPink;
+                    }
                   
                 }
             }
@@ -491,6 +509,13 @@ main{
              }
             }
         }
+    }
+    .newsletter{
+        width: 100%;
+        height: 500px;
+        background-image: url("../img/banner/banner-2.jpg");
+        background-position: top;
+        background-size: cover;
     }
 
 }
