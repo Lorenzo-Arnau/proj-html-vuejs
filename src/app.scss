@@ -510,12 +510,54 @@ main{
             }
         }
     }
-    .newsletter{
+    .newsletter-sec{
+        @include flex-row;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         height: 500px;
         background-image: url("../img/banner/banner-2.jpg");
         background-position: top;
         background-size: cover;
+        &-content{
+            @include flex-col;
+            height: 60%;
+            width: 40%;
+            h2{
+                font-size: 35px;
+                font-family: $journalFont;
+                text-align: center;
+                font-weight: normal;
+                color: $brandWhite;
+               
+            }
+            h4{
+                @include pageSubtitleH4Gold;
+                text-align: center;
+            }
+            div{
+              align-self: center;
+              input{
+                  height: 45px;
+                  width: 200px;
+                  border: none;
+                  border-radius: 5px;
+                  margin-right: 10px;
+                  &::placeholder{
+                      padding-left: 10px;
+                  }
+              }
+              button{
+                  @include page-button-style;
+                  width: 100px;
+              }
+            }
+            p{
+               text-align: center;
+                color: $brandLightGrey;
+                margin-top: 25px;
+            }
+        }
     }
 
 }

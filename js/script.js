@@ -32,6 +32,7 @@ new Vue({
             ], 
             
             price:'39',
+            mailNewsletter:'',
         },
     mounted() {
      

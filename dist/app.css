@@ -565,10 +565,69 @@ main .upcoming-event-sec-content .event-one h3, main .upcoming-event-sec-content
 main .upcoming-event-sec-content .event-one p, main .upcoming-event-sec-content .event-two p, main .upcoming-event-sec-content .event-three p {
   color: #434343;
 }
-main .newsletter {
+main .newsletter-sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 500px;
   background-image: url("../img/banner/banner-2.jpg");
   background-position: top;
   background-size: cover;
+}
+main .newsletter-sec-content {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  width: 40%;
+}
+main .newsletter-sec-content h2 {
+  font-size: 35px;
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+  font-weight: normal;
+  color: #FFFFFF;
+}
+main .newsletter-sec-content h4 {
+  margin-top: 25px;
+  text-transform: uppercase;
+  color: #F3B329;
+  text-align: center;
+}
+main .newsletter-sec-content div {
+  align-self: center;
+}
+main .newsletter-sec-content div input {
+  height: 45px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+main .newsletter-sec-content div input::-moz-placeholder {
+  padding-left: 10px;
+}
+main .newsletter-sec-content div input:-ms-input-placeholder {
+  padding-left: 10px;
+}
+main .newsletter-sec-content div input::placeholder {
+  padding-left: 10px;
+}
+main .newsletter-sec-content div button {
+  align-self: center;
+  width: 150px;
+  height: 45px;
+  margin-top: 45px;
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  cursor: pointer;
+  background-color: #3DA698;
+  width: 100px;
+}
+main .newsletter-sec-content p {
+  text-align: center;
+  color: #868586;
+  margin-top: 25px;
 }
