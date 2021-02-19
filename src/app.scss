@@ -346,5 +346,113 @@ main{
             }
         }
     }
+    .crities-say-section{
+        @include flex-col;
+        align-items: center;
+        width: 100%;
+        &-header{
+            @include flex-row;
+            justify-content: space-between;
+            width: 80%;
+            height: 160px;
+
+            .crities-header-title{
+                width: 30%;
+                h2{
+                    font-family: $journalFont;
+                    margin-top: 15px;
+                    font-size: 40px;
+                }
+                h4{
+                    @include pageSubtitleH4Gold;
+                    color: $brandCyano;
+                }
+            }
+            .crities-header-button{
+                width: 20%;
+                align-self: center;
+                button{
+                    @include page-button-style;
+                    width: 200px;
+                    background-color: $brandSaffron;
+                    margin-top: 0;
+                }
+            }
+
+        }
+        &-content{
+            width: 80%;
+            height: 700px;
+            @include flex-row;
+            justify-content: space-between;
+            &-article{
+                @include flex-col;
+                align-items: center;
+                justify-content: center;
+                width: 60%;
+                height: 100%;
+                background-image: url("../img/thumbetestimonial/testimonial2-2x.jpg");
+                background-size: cover;
+                background-position: center;
+                border-bottom-right-radius: 100px;
+                color: $brandWhite;
+                h2{
+                    font-size: 45px;
+                    padding-bottom: 20px;
+                    font-weight: normal;
+                    font-family: $journalFont;
+                    border-bottom: 1px solid $brandLightGrey;
+                }
+                h4{
+                   font-size: 20px;
+                   padding: 20px 0px;
+                }
+                p{
+                    padding: 20px 150px;
+                }
+                div{
+                    align-self: flex-start;
+                    margin-left: 150px;
+                    font-weight: bold;
+                    span:last-child{
+                        color: $brandCyano;
+                    }
+                    img{
+                        vertical-align: middle;
+                        margin-right: 15px;
+                    }
+
+                }
+            }
+            &-journal{
+                @include flex-col;
+                width: 35%;
+                height: 100%;
+                justify-content: space-around;
+                align-items: flex-end;
+                
+                div:nth-child(2),div:nth-child(4){
+                    align-self: flex-start;
+                    color: $brandLightGrey;
+                    img{
+                        vertical-align: middle;
+                        margin-right: 10px;
+                    }
+                    span{
+                        color: $brandGrey;
+                    }
+                }
+                .crities-journal-first{
+                   @include crities-journal-style;
+                  
+                }
+                .crities-journal-second{
+                    @include crities-journal-style;
+                   
+                }
+            }
+            
+        }
+    }
 
 }

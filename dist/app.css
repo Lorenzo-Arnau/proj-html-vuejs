@@ -378,3 +378,157 @@ main .audiobook-sec-content-desc ul {
   justify-content: space-around;
   align-items: center;
 }
+main .crities-say-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+main .crities-say-section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  height: 160px;
+}
+main .crities-say-section-header .crities-header-title {
+  width: 30%;
+}
+main .crities-say-section-header .crities-header-title h2 {
+  font-family: "DM Serif Display", serif;
+  margin-top: 15px;
+  font-size: 40px;
+}
+main .crities-say-section-header .crities-header-title h4 {
+  margin-top: 25px;
+  text-transform: uppercase;
+  color: #F3B329;
+  color: #3DA698;
+}
+main .crities-say-section-header .crities-header-button {
+  width: 20%;
+  align-self: center;
+}
+main .crities-say-section-header .crities-header-button button {
+  align-self: center;
+  width: 150px;
+  height: 45px;
+  margin-top: 45px;
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  cursor: pointer;
+  background-color: #3DA698;
+  width: 200px;
+  background-color: #F3B329;
+  margin-top: 0;
+}
+main .crities-say-section-content {
+  width: 80%;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .crities-say-section-content-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+  background-image: url("../img/thumbetestimonial/testimonial2-2x.jpg");
+  background-size: cover;
+  background-position: center;
+  border-bottom-right-radius: 100px;
+  color: #FFFFFF;
+}
+main .crities-say-section-content-article h2 {
+  font-size: 45px;
+  padding-bottom: 20px;
+  font-weight: normal;
+  font-family: "DM Serif Display", serif;
+  border-bottom: 1px solid #868586;
+}
+main .crities-say-section-content-article h4 {
+  font-size: 20px;
+  padding: 20px 0px;
+}
+main .crities-say-section-content-article p {
+  padding: 20px 150px;
+}
+main .crities-say-section-content-article div {
+  align-self: flex-start;
+  margin-left: 150px;
+  font-weight: bold;
+}
+main .crities-say-section-content-article div span:last-child {
+  color: #3DA698;
+}
+main .crities-say-section-content-article div img {
+  vertical-align: middle;
+  margin-right: 15px;
+}
+main .crities-say-section-content-journal {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+main .crities-say-section-content-journal div:nth-child(2), main .crities-say-section-content-journal div:nth-child(4) {
+  align-self: flex-start;
+  color: #868586;
+}
+main .crities-say-section-content-journal div:nth-child(2) img, main .crities-say-section-content-journal div:nth-child(4) img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+main .crities-say-section-content-journal div:nth-child(2) span, main .crities-say-section-content-journal div:nth-child(4) span {
+  color: #434343;
+}
+main .crities-say-section-content-journal .crities-journal-first {
+  height: 40%;
+  width: 90%;
+  background-color: #F3ECE3;
+  text-align: center;
+  padding: 25px;
+  position: relative;
+}
+main .crities-say-section-content-journal .crities-journal-first h2 {
+  font-family: "DM Serif Display", serif;
+}
+main .crities-say-section-content-journal .crities-journal-first p {
+  padding-top: 20px;
+  color: #434343;
+}
+main .crities-say-section-content-journal .crities-journal-first i {
+  position: absolute;
+  bottom: -22px;
+  left: 40px;
+  font-size: 40px;
+  color: #F3ECE3;
+}
+main .crities-say-section-content-journal .crities-journal-second {
+  height: 40%;
+  width: 90%;
+  background-color: #F3ECE3;
+  text-align: center;
+  padding: 25px;
+  position: relative;
+}
+main .crities-say-section-content-journal .crities-journal-second h2 {
+  font-family: "DM Serif Display", serif;
+}
+main .crities-say-section-content-journal .crities-journal-second p {
+  padding-top: 20px;
+  color: #434343;
+}
+main .crities-say-section-content-journal .crities-journal-second i {
+  position: absolute;
+  bottom: -22px;
+  left: 40px;
+  font-size: 40px;
+  color: #F3ECE3;
+}

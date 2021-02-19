@@ -53,3 +53,25 @@
     text-transform: uppercase;
     color: $brandSaffron;
 }
+@mixin crities-journal-style {
+    height: 40%;
+    width: 90%;
+    background-color:$brandPink;
+    text-align: center;
+    padding: 25px;
+    position: relative;
+    h2{
+        font-family: $journalFont;
+    }
+    p{
+        padding-top: 20px;
+        color: $brandGrey;
+    }
+    i{
+        position: absolute;
+        bottom: -22px;
+        left: 40px;
+        font-size: 40px;
+        color: $brandPink;
+    }
+}
