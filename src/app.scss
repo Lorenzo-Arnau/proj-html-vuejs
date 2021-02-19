@@ -356,14 +356,15 @@ main{
         width: 100%;
         &-header{
             @include flex-row;
-            justify-content: space-between;
-            width: 80%;
+            justify-content: space-around;
+            width: 100%;
             height: 160px;
 
             .crities-header-title{
                 width: 40%;
                 h2{
                     font-family: $journalFont;
+                    font-weight: normal;
                     margin-top: 15px;
                     font-size: 40px;
                 }
@@ -373,8 +374,10 @@ main{
                 }
             }
             .crities-header-button{
+                @include flex-row;
                 width: 20%;
                 align-self: center;
+                justify-content: flex-end;
                 button{
                     @include page-button-style;
                     width: 200px;
@@ -612,7 +615,13 @@ main{
               h4{
                   color: $brandGold;
                   margin: 15px 0px;
-              }        
+              } 
+              div{
+                  width: 60px;
+                  height: 2px;
+                  background-color: $brandLightGrey;
+                  align-self: center;
+              }       
             }
             .fact-one{
                 background-image: url("../img/boxes/box-1.jpg");
@@ -631,6 +640,105 @@ main{
                 border-bottom-right-radius: 30px ;
             }
         }
+    }
+    .recent-articles-section{
+        @include flex-col;
+        align-items: center;
+        width: 100%;
+        height: 880px;
+        background-color: $brandPink;
+        margin-top: 70px;
+        &-header{
+            @include flex-row;
+            justify-content: space-around;
+            width: 100%;
+            height: 140px;
+
+            .articles-header-title{
+                width: 40%;
+                h2{
+                    font-family: $journalFont;
+                    font-weight: normal;
+                    margin-top: 15px;
+                    font-size: 40px;
+                }
+                h4{
+                    @include pageSubtitleH4Gold;
+                    margin-top: 10px;
+                    color: $brandCyano;
+                }
+            }
+            .articles-header-button{
+                @include flex-row;
+                width: 20%;
+                align-self: center;
+                justify-content: flex-end;
+                button{
+                    @include page-button-style;
+                    width: 200px;
+                    background-color: $brandSaffron;
+                    margin-top: 0;
+                    &:hover{
+                        background-color: $brandSaffronLight;
+                    }
+                }
+            }
+
+        }
+        &-content{
+            width: 70%;
+            height: 650px;
+            @include flex-row;
+            justify-content: space-between;
+
+            &-creativity{
+                @include flex-col;
+                background-color: $brandWhite;
+                width: 65%;
+                height: 100%;
+                justify-content: center;
+                img{
+                    align-self: center;
+                    width: 80%;
+                }
+                h3{
+                    margin-top: 20px;
+                    color: $brandBlack;
+                }
+                h3,span,p{
+                    padding: 10px 90px;
+                }
+                span{
+                    font-size: 12px;
+                }
+                p,span{
+                    color: $brandGrey;
+                }
+            }
+            &-booklist{
+                @include flex-col;
+                align-items: center;
+                justify-content: space-around;
+                background-color: $brandWhite;
+                width: 32%;
+                height: 100%;
+                .booklist-one,.booklist-two{
+                    @include booklist-style;
+                    img{
+                      width: 100%;
+                    }
+                    h3{
+                        padding: 10px 0px;
+                    }
+                    span{
+                        font-size: 14px;
+                    }
+                }
+               
+            }
+            
+            }
+            
     }
 
 }

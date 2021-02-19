@@ -318,7 +318,7 @@ main .commercial-partner-sec {
   width: 100%;
   height: 140px;
   justify-content: center;
-  background-color: #F3ECE3;
+  background-color: #FEF7E9;
 }
 main .commercial-partner-sec ul {
   display: flex;
@@ -392,8 +392,8 @@ main .crities-say-section {
 main .crities-say-section-header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 80%;
+  justify-content: space-around;
+  width: 100%;
   height: 160px;
 }
 main .crities-say-section-header .crities-header-title {
@@ -401,6 +401,7 @@ main .crities-say-section-header .crities-header-title {
 }
 main .crities-say-section-header .crities-header-title h2 {
   font-family: "DM Serif Display", serif;
+  font-weight: normal;
   margin-top: 15px;
   font-size: 40px;
 }
@@ -411,8 +412,11 @@ main .crities-say-section-header .crities-header-title h4 {
   color: #3DA698;
 }
 main .crities-say-section-header .crities-header-button {
+  display: flex;
+  flex-direction: row;
   width: 20%;
   align-self: center;
+  justify-content: flex-end;
 }
 main .crities-say-section-header .crities-header-button button {
   align-self: center;
@@ -499,7 +503,7 @@ main .crities-say-section-content-journal div:nth-child(2) span, main .crities-s
 main .crities-say-section-content-journal .crities-journal-first, main .crities-say-section-content-journal .crities-journal-second {
   height: 40%;
   width: 90%;
-  background-color: #F3ECE3;
+  background-color: #FEF7E9;
   text-align: center;
   padding: 25px;
   position: relative;
@@ -516,7 +520,7 @@ main .crities-say-section-content-journal .crities-journal-first i, main .critie
   bottom: -22px;
   left: 40px;
   font-size: 40px;
-  color: #F3ECE3;
+  color: #FEF7E9;
 }
 main .upcoming-event-sec {
   display: flex;
@@ -524,7 +528,7 @@ main .upcoming-event-sec {
   margin-top: 50px;
   align-items: center;
   width: 100%;
-  background-color: #F3ECE3;
+  background-color: #FEF7E9;
 }
 main .upcoming-event-sec-header {
   display: flex;
@@ -697,6 +701,12 @@ main .dig-deeper-sec-content .fact-one h4, main .dig-deeper-sec-content .fact-tw
   color: #E1AA40;
   margin: 15px 0px;
 }
+main .dig-deeper-sec-content .fact-one div, main .dig-deeper-sec-content .fact-two div, main .dig-deeper-sec-content .fact-three div {
+  width: 60px;
+  height: 2px;
+  background-color: #868586;
+  align-self: center;
+}
 main .dig-deeper-sec-content .fact-one {
   background-image: url("../img/boxes/box-1.jpg");
   opacity: 0.9;
@@ -712,4 +722,114 @@ main .dig-deeper-sec-content .fact-three {
   background-image: url("../img/boxes/box-3.jpg");
   opacity: 0.9;
   border-bottom-right-radius: 30px;
+}
+main .recent-articles-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 880px;
+  background-color: #FEF7E9;
+  margin-top: 70px;
+}
+main .recent-articles-section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 140px;
+}
+main .recent-articles-section-header .articles-header-title {
+  width: 40%;
+}
+main .recent-articles-section-header .articles-header-title h2 {
+  font-family: "DM Serif Display", serif;
+  font-weight: normal;
+  margin-top: 15px;
+  font-size: 40px;
+}
+main .recent-articles-section-header .articles-header-title h4 {
+  margin-top: 25px;
+  text-transform: uppercase;
+  color: #F3B329;
+  margin-top: 10px;
+  color: #3DA698;
+}
+main .recent-articles-section-header .articles-header-button {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  align-self: center;
+  justify-content: flex-end;
+}
+main .recent-articles-section-header .articles-header-button button {
+  align-self: center;
+  width: 150px;
+  height: 45px;
+  margin-top: 45px;
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  cursor: pointer;
+  background-color: #3DA698;
+  width: 200px;
+  background-color: #F3B329;
+  margin-top: 0;
+}
+main .recent-articles-section-header .articles-header-button button:hover {
+  background-color: #F4A700;
+}
+main .recent-articles-section-content {
+  width: 70%;
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .recent-articles-section-content-creativity {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  width: 65%;
+  height: 100%;
+  justify-content: center;
+}
+main .recent-articles-section-content-creativity img {
+  align-self: center;
+  width: 80%;
+}
+main .recent-articles-section-content-creativity h3 {
+  margin-top: 20px;
+  color: #030303;
+}
+main .recent-articles-section-content-creativity h3, main .recent-articles-section-content-creativity span, main .recent-articles-section-content-creativity p {
+  padding: 10px 90px;
+}
+main .recent-articles-section-content-creativity span {
+  font-size: 12px;
+}
+main .recent-articles-section-content-creativity p, main .recent-articles-section-content-creativity span {
+  color: #434343;
+}
+main .recent-articles-section-content-booklist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #FFFFFF;
+  width: 32%;
+  height: 100%;
+}
+main .recent-articles-section-content-booklist .booklist-one, main .recent-articles-section-content-booklist .booklist-two {
+  width: 70%;
+  height: 40%;
+}
+main .recent-articles-section-content-booklist .booklist-one img, main .recent-articles-section-content-booklist .booklist-two img {
+  width: 100%;
+}
+main .recent-articles-section-content-booklist .booklist-one h3, main .recent-articles-section-content-booklist .booklist-two h3 {
+  padding: 10px 0px;
+}
+main .recent-articles-section-content-booklist .booklist-one span, main .recent-articles-section-content-booklist .booklist-two span {
+  font-size: 14px;
 }
