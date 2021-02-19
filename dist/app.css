@@ -423,6 +423,9 @@ main .crities-say-section-header .crities-header-button button {
   background-color: #F3B329;
   margin-top: 0;
 }
+main .crities-say-section-header .crities-header-button button:hover {
+  background-color: #E1AA40;
+}
 main .crities-say-section-content {
   width: 80%;
   height: 700px;

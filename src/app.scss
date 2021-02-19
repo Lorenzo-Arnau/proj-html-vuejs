@@ -376,6 +376,9 @@ main{
                     width: 200px;
                     background-color: $brandSaffron;
                     margin-top: 0;
+                    &:hover{
+                        background-color: $brandGold;
+                    }
                 }
             }
 
