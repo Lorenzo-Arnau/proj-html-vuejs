@@ -488,7 +488,7 @@ main .crities-say-section-content-journal div:nth-child(2) img, main .crities-sa
 main .crities-say-section-content-journal div:nth-child(2) span, main .crities-say-section-content-journal div:nth-child(4) span {
   color: #434343;
 }
-main .crities-say-section-content-journal .crities-journal-first {
+main .crities-say-section-content-journal .crities-journal-first, main .crities-say-section-content-journal .crities-journal-second {
   height: 40%;
   width: 90%;
   background-color: #F3ECE3;
@@ -496,39 +496,64 @@ main .crities-say-section-content-journal .crities-journal-first {
   padding: 25px;
   position: relative;
 }
-main .crities-say-section-content-journal .crities-journal-first h2 {
+main .crities-say-section-content-journal .crities-journal-first h2, main .crities-say-section-content-journal .crities-journal-second h2 {
   font-family: "DM Serif Display", serif;
 }
-main .crities-say-section-content-journal .crities-journal-first p {
+main .crities-say-section-content-journal .crities-journal-first p, main .crities-say-section-content-journal .crities-journal-second p {
   padding-top: 20px;
   color: #434343;
 }
-main .crities-say-section-content-journal .crities-journal-first i {
+main .crities-say-section-content-journal .crities-journal-first i, main .crities-say-section-content-journal .crities-journal-second i {
   position: absolute;
   bottom: -22px;
   left: 40px;
   font-size: 40px;
   color: #F3ECE3;
 }
-main .crities-say-section-content-journal .crities-journal-second {
-  height: 40%;
-  width: 90%;
+main .upcoming-event-sec {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  align-items: center;
+  width: 100%;
   background-color: #F3ECE3;
-  text-align: center;
-  padding: 25px;
-  position: relative;
 }
-main .crities-say-section-content-journal .crities-journal-second h2 {
+main .upcoming-event-sec-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 160px;
+}
+main .upcoming-event-sec-header h2 {
   font-family: "DM Serif Display", serif;
+  font-size: 35px;
 }
-main .crities-say-section-content-journal .crities-journal-second p {
-  padding-top: 20px;
+main .upcoming-event-sec-header h4 {
+  margin-top: 25px;
+  text-transform: uppercase;
+  color: #F3B329;
+  margin-top: 10px;
+}
+main .upcoming-event-sec-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  height: 450px;
+}
+main .upcoming-event-sec-content .event-one, main .upcoming-event-sec-content .event-two, main .upcoming-event-sec-content .event-three {
+  width: 30%;
+  height: 100%;
+  text-align: center;
+}
+main .upcoming-event-sec-content .event-one img, main .upcoming-event-sec-content .event-two img, main .upcoming-event-sec-content .event-three img {
+  width: 100%;
+}
+main .upcoming-event-sec-content .event-one h3, main .upcoming-event-sec-content .event-two h3, main .upcoming-event-sec-content .event-three h3 {
+  padding: 20px 0px;
+}
+main .upcoming-event-sec-content .event-one p, main .upcoming-event-sec-content .event-two p, main .upcoming-event-sec-content .event-three p {
   color: #434343;
-}
-main .crities-say-section-content-journal .crities-journal-second i {
-  position: absolute;
-  bottom: -22px;
-  left: 40px;
-  font-size: 40px;
-  color: #F3ECE3;
 }

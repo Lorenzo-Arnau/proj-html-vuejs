@@ -75,3 +75,11 @@
         color: $brandPink;
     }
 }
+@mixin events-style {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    img{
+        width: 100%;
+    }
+}

@@ -442,16 +442,51 @@ main{
                         color: $brandGrey;
                     }
                 }
-                .crities-journal-first{
+                .crities-journal-first,.crities-journal-second{
                    @include crities-journal-style;
                   
                 }
-                .crities-journal-second{
-                    @include crities-journal-style;
-                   
-                }
             }
             
+        }
+    }
+    .upcoming-event-sec{
+        @include flex-col;
+        margin-top: 50px;
+        align-items: center;
+        width: 100%;
+        background-color: $brandPink;
+        &-header{
+            @include flex-col;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: 160px;
+           
+            h2{
+                font-family: $journalFont;
+                font-size: 35px;
+            }
+            h4{
+                @include pageSubtitleH4Gold;
+                margin-top: 10px;
+            }
+        }
+        &-content{
+            @include flex-row;
+            justify-content: space-between;
+            width: 80%;
+            height: 450px;
+            
+            .event-one,.event-two,.event-three{
+             @include events-style;
+             h3{
+                 padding: 20px 0px;
+             }
+             p{
+                 color: $brandGrey;
+             }
+            }
         }
     }
 
