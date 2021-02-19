@@ -501,9 +501,13 @@ main{
             
             .event-one,.event-two,.event-three{
              @include events-style;
+             @include flex-col;
+             background-color: $brandWhite;
              h3{
-                 padding: 15px 0px; 
-                 border-bottom: 1px solid $brandLightGrey;
+                 align-self: center;
+                 padding: 15px 0px;
+                 width: 80%; 
+                 border-bottom: 1px solid $brandStone;
              }
              p{
                  padding-top: 5px;
@@ -564,6 +568,67 @@ main{
                text-align: center;
                 color: $brandLightGrey;
                 margin-top: 25px;
+            }
+        }
+    }
+    .dig-deeper-sec{
+        @include flex-col;
+        align-items: center;
+        width: 100%;
+        background-color: $brandWhite;
+        &-header{
+            @include flex-col;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: 160px;
+           
+            h2{
+               font-family: $journalFont;
+               font-size: 35px;
+               font-weight: normal;
+            }
+            h4{
+              @include pageSubtitleH4Gold;
+              color: $brandCyano;
+            }
+        }
+        &-content{
+            @include flex-row;
+            justify-content: space-between;
+            width: 80%;
+            height: 500px;
+            
+            .fact-one,.fact-two,.fact-three{
+             @include events-style;
+             @include flex-col;
+             justify-content: flex-end;
+
+              h2{
+                 padding: 15px 0px;
+                 font-size: 30px;
+                 color: $brandWhite;
+              }
+              h4{
+                  color: $brandGold;
+                  margin: 15px 0px;
+              }        
+            }
+            .fact-one{
+                background-image: url("../img/boxes/box-1.jpg");
+                opacity: 0.9;
+                border-bottom-right-radius: 30px ;
+            }
+            .fact-two{
+                background-image: url("../img/boxes/box-4.jpg");
+                background-size: cover;
+                opacity: 0.9;
+                border-bottom-right-radius: 30px ;
+            }
+            .fact-three{
+                background-image: url("../img/boxes/box-3.jpg");
+                opacity: 0.9;
+                border-bottom-right-radius: 30px ;
             }
         }
     }
