@@ -833,3 +833,62 @@ main .recent-articles-section-content-booklist .booklist-one h3, main .recent-ar
 main .recent-articles-section-content-booklist .booklist-one span, main .recent-articles-section-content-booklist .booklist-two span {
   font-size: 14px;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  justify-content: space-between;
+  width: 100%;
+  height: 450px;
+  background-image: url("../img/footer/footer-3.jpg");
+  background-position: top;
+}
+footer .footer-sec-one {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70%;
+}
+footer .footer-sec-one-first-menu, footer .footer-sec-one-second-menu, footer .footer-sec-one-third-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 18%;
+  height: 100%;
+  background-color: aquamarine;
+  margin: 0px 90px;
+}
+footer .footer-sec-one-first-menu h4, footer .footer-sec-one-second-menu h4, footer .footer-sec-one-third-menu h4 {
+  font-size: 20px;
+}
+footer .footer-sec-one-first-menu ul, footer .footer-sec-one-second-menu ul, footer .footer-sec-one-third-menu ul {
+  list-style: none;
+}
+footer .footer-sec-one-first-menu ul li, footer .footer-sec-one-second-menu ul li, footer .footer-sec-one-third-menu ul li {
+  margin: 20px 0px;
+}
+footer .footer-sec-one-first-menu p, footer .footer-sec-one-second-menu p, footer .footer-sec-one-third-menu p {
+  margin: 35px 0px;
+}
+footer .footer-sec-one-first-menu i, footer .footer-sec-one-second-menu i, footer .footer-sec-one-third-menu i {
+  margin-right: 10px;
+}
+footer .footer-sec-one-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 10%;
+  margin: 0px 90px;
+  height: 100%;
+  background-color: blue;
+}
+footer .footer-sec-one-logo img {
+  height: 50%;
+  align-self: center;
+}
+footer .footer-sec-two {
+  width: 100%;
+  height: 100px;
+  background-color: tomato;
+}
