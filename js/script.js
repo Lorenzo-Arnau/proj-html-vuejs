@@ -66,7 +66,7 @@ new Vue({
          counter:0,  
     },
     mounted() {
-     
+      
     },
     methods:{
       returnTop:function(){
@@ -75,6 +75,11 @@ new Vue({
             left: 0,
             behavior: 'smooth'
             });
+      },
+      carouselLive:function(){
+        setInterval(() => {
+           this.changeHeaderBg('right')
+       }, 4000);
       },
       changeHeaderBg:function(side){
         backgroundlist=['img/hero/hero-07-2x.jpg','img/hero/hero-06-2x.jpg','img/hero/hero-08.jpg']

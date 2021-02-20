@@ -19,7 +19,7 @@
 <body>
     <div id="root">
         <!-- start header -->
-        <header v-bind:style="{ backgroundImage: 'url(' + headerImage + ')' }">
+        <header v-bind:style="{ backgroundImage: 'url(' + headerImage + ')' }" @mouseenter="carouselLive()">
               <!-- start navbar -->
             <div class="navbar">
                 <div class="navbar-logo">
