@@ -83,7 +83,7 @@ new Vue({
       carouselLive:function(){
           const interval = setInterval(() => {
               this.changeHeaderBg('right')
-            }, 4000);            
+            }, 7000);            
           if (this.flag == true) {
               interval
             }else{
