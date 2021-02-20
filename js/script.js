@@ -63,7 +63,8 @@ new Vue({
          creditsPart1:'Copyright 2012 - 2020 | Avada Theme by ',
          creditsPart2:' | All Rights Reserved | Powered by ',
          headerImage:'img/hero/hero-07-2x.jpg',
-         counter:0,  
+         counter:0,
+         flag : true,  
     },
     mounted() {
      
@@ -76,10 +77,19 @@ new Vue({
             behavior: 'smooth'
             });
       },
+      stopCarousel:function(){
+        this.flag = false;
+      },
       carouselLive:function(){
-        setInterval(() => {
-           this.changeHeaderBg('right')
-       }, 4000);
+          const interval = setInterval(() => {
+              this.changeHeaderBg('right')
+            }, 4000);            
+          if (this.flag == true) {
+              interval
+            }else{
+                clearInterval(interval)
+            }
+            this.flag = true;
       },
       changeHeaderBg:function(side){
         backgroundlist=['img/hero/hero-07-2x.jpg','img/hero/hero-06-2x.jpg','img/hero/hero-08.jpg']
