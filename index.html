@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="dist/app.css">
 </head>
 <body>
-    <div id="root">
+    <div id="root" @mouseenter="carouselLive()">
         <!-- start header -->
-        <header v-bind:style="{ backgroundImage: 'url(' + headerImage + ')' }" @mouseenter="carouselLive()">
+        <header v-bind:style="{ backgroundImage: 'url(' + headerImage + ')' }">
               <!-- start navbar -->
             <div class="navbar">
                 <div class="navbar-logo">

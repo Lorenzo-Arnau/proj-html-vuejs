@@ -66,7 +66,7 @@ new Vue({
          counter:0,  
     },
     mounted() {
-      
+     
     },
     methods:{
       returnTop:function(){
