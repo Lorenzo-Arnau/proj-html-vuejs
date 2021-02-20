@@ -19,7 +19,7 @@
 <body>
     <div id="root">
         <!-- start header -->
-        <header>
+        <header v-bind:style="{ backgroundImage: 'url(' + headerImage + ')' }">
               <!-- start navbar -->
             <div class="navbar">
                 <div class="navbar-logo">
@@ -55,8 +55,8 @@
                     <h2>Best-selling author and the most <br> influential public intellectual in the <br> western world right now.</h2>
                     <span>-The New York Times</span>
                     <div class="jumbotron-controls">
-                        <div class="left"><i class="fas fa-arrow-left"></i></div>
-                        <div class="right"><i class="fas fa-arrow-right"></i></div>
+                        <div class="left" @click="changeHeaderBg('left')"><i class="fas fa-arrow-left"></i></div>
+                        <div class="right" @click="changeHeaderBg('right')"><i class="fas fa-arrow-right"></i></div>
                     </div>
                 </div>
                 <div class="lastet-book">
@@ -250,25 +250,21 @@
             </div>
             <div class="footer-sec-one-first-menu">
                 <h4>About Me</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo explicabo nobis corporis. Vero sed numquam quas animi asperiores sunt ullam? Debitis voluptates facilis placeat! </p>
+                <p>{{footerAbout}}</p>
             </div>
             <div class="footer-sec-one-second-menu">
                 <h4>Useful Links</h4>
                 <ul>
-                    <li><i class="fas fa-angle-right"></i>Lastet Books</li>
-                    <li><i class="fas fa-angle-right"></i>Upcoming Events</li>
-                    <li><i class="fas fa-angle-right"></i>Recent Articles</li>
-                    <li><i class="fas fa-angle-right"></i>Buisness Enquiries</li>
-                    <li><i class="fas fa-angle-right"></i>Visit My Foundation</li>
+                    <li v-for="i in footerMenuLeft"><i class="fas fa-angle-right"></i>{{i.name}}</li>
                 </ul>
             </div>
             <div class="footer-sec-one-third-menu">
                 <h4>Contact Info</h4>
-                <ul>
-                    <li>63 E.Studebaker Street Bolingbrook,IL 60440</li>
-                    <li>Phone:(800)000-0000</li>
-                    <li>Mobile:(800)000-0000</li>
-                    <li>Email:Info@your-company.com</li>
+                <ul class="contacts-specs">
+                    <li>{{contactInfo.address}}</li>
+                    <li>Phone:{{contactInfo.phone}}</li>
+                    <li>Mobile:{{contactInfo.mobile}}</li>
+                    <li>Email:{{contactInfo.email}}</li>
                     <li>
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-twitter"></i>
@@ -280,7 +276,10 @@
             </div>
         </div>
         <div class="footer-sec-two">
-            <div class="footer-content"></div>
+            <div class="footer-content">
+                <div><i class="far fa-copyright"></i>{{creditsPart1}} <span>ThemeFusion</span> {{creditsPart2}} <span>Wordpress</span></div>
+                <div class="return-button" @click="returnTop()"><i class="fas fa-chevron-up"></i></div>
+            </div>
 
         </div>
 
