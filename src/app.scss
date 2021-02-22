@@ -19,7 +19,10 @@ header{
         justify-content: space-between;
         height: 250px;
         margin:0 auto ;
-
+        a{
+            text-decoration: none;
+            color: $brandWhite;
+        }
         ul{
             @include flex-row;
             list-style: none;
@@ -34,6 +37,9 @@ header{
             transition: border-top 170ms ease-in-out;
             &:hover{             
                 border-top: 6px solid $brandSaffron;
+                color: $brandSaffron;
+            }
+            &:hover a{
                 color: $brandSaffron;
             }
         }     
@@ -616,6 +622,8 @@ main{
              @include flex-col;
              justify-content: flex-end;
              transition: transform 250ms ease-in-out;
+             opacity: 0.9;
+             border-bottom-right-radius: 30px ;
               h2{
                  padding: 15px 0px;
                  font-size: 30px;
@@ -638,20 +646,14 @@ main{
               }       
             }
             .fact-one{
-                background-image: url("../img/boxes/box-1.jpg");
-                opacity: 0.9;
-                border-bottom-right-radius: 30px ;
+                background-image: url("../img/boxes/box-1.jpg"); 
             }
             .fact-two{
                 background-image: url("../img/boxes/box-4.jpg");
-                background-size: cover;
-                opacity: 0.9;
-                border-bottom-right-radius: 30px ;
+                background-size: cover;     
             }
             .fact-three{
                 background-image: url("../img/boxes/box-3.jpg");
-                opacity: 0.9;
-                border-bottom-right-radius: 30px ;
             }
         }
     }
@@ -803,6 +805,9 @@ footer{
             }
             i{
                 margin-right: 20px;
+                &:hover{
+                    color: $brandWhite;
+                }
             }
             .contacts-specs{
                 color: $brandPumice;

@@ -21,6 +21,10 @@ header .navbar {
   height: 250px;
   margin: 0 auto;
 }
+header .navbar a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
 header .navbar ul {
   display: flex;
   flex-direction: row;
@@ -37,6 +41,9 @@ header .navbar ul li {
 }
 header .navbar ul li:hover {
   border-top: 6px solid #F3B329;
+  color: #F3B329;
+}
+header .navbar ul li:hover a {
   color: #F3B329;
 }
 header .navbar-logo {
@@ -732,6 +739,8 @@ main .dig-deeper-sec-content .fact-one, main .dig-deeper-sec-content .fact-two, 
   flex-direction: column;
   justify-content: flex-end;
   transition: transform 250ms ease-in-out;
+  opacity: 0.9;
+  border-bottom-right-radius: 30px;
 }
 main .dig-deeper-sec-content .fact-one img, main .dig-deeper-sec-content .fact-two img, main .dig-deeper-sec-content .fact-three img {
   width: 100%;
@@ -758,19 +767,13 @@ main .dig-deeper-sec-content .fact-one:hover, main .dig-deeper-sec-content .fact
 }
 main .dig-deeper-sec-content .fact-one {
   background-image: url("../img/boxes/box-1.jpg");
-  opacity: 0.9;
-  border-bottom-right-radius: 30px;
 }
 main .dig-deeper-sec-content .fact-two {
   background-image: url("../img/boxes/box-4.jpg");
   background-size: cover;
-  opacity: 0.9;
-  border-bottom-right-radius: 30px;
 }
 main .dig-deeper-sec-content .fact-three {
   background-image: url("../img/boxes/box-3.jpg");
-  opacity: 0.9;
-  border-bottom-right-radius: 30px;
 }
 main .recent-articles-section {
   display: flex;
@@ -935,6 +938,9 @@ footer .footer-sec-one-first-menu p, footer .footer-sec-one-second-menu p, foote
 }
 footer .footer-sec-one-first-menu i, footer .footer-sec-one-second-menu i, footer .footer-sec-one-third-menu i {
   margin-right: 20px;
+}
+footer .footer-sec-one-first-menu i:hover, footer .footer-sec-one-second-menu i:hover, footer .footer-sec-one-third-menu i:hover {
+  color: #FFFFFF;
 }
 footer .footer-sec-one-first-menu .contacts-specs, footer .footer-sec-one-second-menu .contacts-specs, footer .footer-sec-one-third-menu .contacts-specs {
   color: #BEC6BE;
