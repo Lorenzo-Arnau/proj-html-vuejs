@@ -74,6 +74,16 @@ header .jumbotron-one .author-name {
   width: calc(100% - 50px);
   font-size: 50px;
 }
+header .jumbotron-one .author-name .slide-fade-enter-active {
+  transition: all 0.8s ease-in-out;
+}
+header .jumbotron-one .author-name .slide-fade-leave-active {
+  transition: all 0.8s ease-in-out;
+}
+header .jumbotron-one .author-name .slide-fade-enter, header .jumbotron-one .author-name .slide-fade-leave-to {
+  transform: translateY(-130px);
+  opacity: 0;
+}
 header .jumbotron-one .demo-price {
   display: flex;
   flex-direction: column;
@@ -95,6 +105,7 @@ header .jumbotron-one .demo-price .demo {
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 1px 1px 20px #434343;
 }
 header .jumbotron-one .demo-price .demo i {
   font-size: 25px;
@@ -112,6 +123,7 @@ header .jumbotron-one .demo-price .price {
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 1px 1px 20px #434343;
   font-size: 25px;
   color: #65BC7B;
 }
@@ -136,13 +148,25 @@ header .jumbotron-two .journal-desc {
   color: #FFFFFF;
   font-family: "DM Serif Display", serif;
 }
+header .jumbotron-two .journal-desc .slide-fade-enter-active {
+  transition: all 0.8s ease-in-out;
+}
+header .jumbotron-two .journal-desc .slide-fade-leave-active {
+  transition: all 0.8s ease-in-out;
+}
+header .jumbotron-two .journal-desc .slide-fade-enter, header .jumbotron-two .journal-desc .slide-fade-leave-to {
+  transform: translateY(-130px);
+  opacity: 0;
+}
 header .jumbotron-two .journal-desc h2 {
   font-size: 40px;
   margin-bottom: 40px;
   width: 650px;
+  color: #FFFFFF;
 }
 header .jumbotron-two .journal-desc span {
   color: #BEC6BE;
+  font-size: 25px;
 }
 header .jumbotron-two .journal-desc .jumbotron-controls {
   display: flex;

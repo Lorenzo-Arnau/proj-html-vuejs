@@ -34,6 +34,7 @@ new Vue({
         price:'39',
         headerTitle:'Damon Vaughn',
         headerContent:'Best-selling author and the most influential public intellectual in the western world right now.',
+        headerSpan:'-The New York Times',
         mailNewsletter:'',
         footerAbout:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo explicabo nobis corporis. Vero sed numquam quas animi asperiores sunt ullam? Debitis voluptates facilis placeat! ',
         footerMenuLeft:[{
@@ -110,15 +111,23 @@ new Vue({
         switch (this.counter) {
             case 0:
              this.headerImage= backgroundlist[0];
+             this.headerTitle='Damon Vaughn';
+             this.headerSpan='-The New York Times';
             break;
             case 1:
-             this.headerImage= backgroundlist[1];  
+             this.headerImage= backgroundlist[1];
+             this.headerTitle='New Book Available';
+             this.headerSpan='Available at Amazon And Barnes&Noble'   
             break;
             case 2:
-            this.headerImage=  backgroundlist[2];  
+            this.headerImage=  backgroundlist[2]; 
+            this.headerTitle='New Book Available';
+            this.headerSpan='Available at Amazon And Barnes&Noble' 
             break;
             default:
             this.headerImage=  backgroundlist[0];
+            this.headerTitle='Damon Vaughn';
+            this.headerSpan='-The New York Times';
             break;
         }
       }

@@ -82,4 +82,18 @@
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 1px 1px 20px $brandGrey;
+}
+@mixin headerAnimation {
+    .slide-fade-enter-active {
+        transition: all .8s ease-in-out;
+      }
+      .slide-fade-leave-active {
+        transition: all .8s ease-in-out;
+      }
+      .slide-fade-enter, .slide-fade-leave-to
+       {
+        transform: translateY(-130px);
+        opacity: 0;
+      }
 }

@@ -37,7 +37,9 @@
               <!-- start jumbotron -->
             <div class="jumbotron-one">
                 <div class="author-name">
-                    <h2>{{headerTitle}}</h2>
+                    <transition name="slide-fade" mode="out-in">
+                        <h2 :key="headerTitle">{{headerTitle}}</h2>
+                    </transition>
                 </div>
                 <div class="demo-price">
                     <div class="demo">
@@ -53,7 +55,9 @@
             <div class="jumbotron-two">
                 <div class="journal-desc">
                     <h2>{{headerContent}}</h2>
-                    <span>-The New York Times</span>
+                    <transition name="slide-fade" mode="out-in">
+                    <span :key="headerSpan">{{headerSpan}}</span>
+                    </transition>
                     <div class="jumbotron-controls">
                         <div class="left" @click="changeHeaderBg('left')"><i class="fas fa-arrow-left"></i></div>
                         <div class="right" @click="changeHeaderBg('right')"><i class="fas fa-arrow-right"></i></div>

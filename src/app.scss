@@ -71,7 +71,7 @@ header{
             height: 100%;
             width: calc(100% - 50px);
             font-size: 50px;
-            
+            @include headerAnimation;          
         }
 
         .demo-price{
@@ -118,19 +118,23 @@ header{
         height: calc(100% - 370px);
         align-self: flex-end;
         justify-content: flex-end;
-
+        
         .journal-desc{
             height: 100%;
             width: 55%;
             color: $brandWhite;
             font-family: $journalFont;
+            @include headerAnimation;
+          
             h2{
                 font-size: 40px;
                 margin-bottom: 40px;
                 width: 650px;
+                color: $brandWhite;
             }
             span{
                 color: $brandPumice;
+                font-size: 25px;
             }
             
             .jumbotron-controls{
