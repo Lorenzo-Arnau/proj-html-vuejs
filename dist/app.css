@@ -34,7 +34,7 @@ header .navbar ul {
   height: 100%;
 }
 header .navbar ul li {
-  line-height: 80px;
+  line-height: 85px;
   color: #FFFFFF;
   cursor: pointer;
   transition: border-top 170ms ease-in-out;
