@@ -45,13 +45,13 @@
     background-color: $brandCyano;
 }
 @mixin coursiveTitle {
-    color: $brandGold;
+    color: $brandSaffron;
     font-family: $fontCoursive;
 }
 @mixin pageSubtitleH4Gold {
     margin-top: 25px;
     text-transform: uppercase;
-    color: $brandSaffron;
+    color: $brandGold;
 }
 @mixin crities-journal-style {
     height: 40%;

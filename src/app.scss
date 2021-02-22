@@ -36,11 +36,11 @@ header{
             cursor: pointer;
             transition: border-top 170ms ease-in-out;
             &:hover{             
-                border-top: 6px solid $brandSaffron;
-                color: $brandSaffron;
+                border-top: 6px solid $brandGold;
+                color: $brandGold;
             }
             &:hover a{
-                color: $brandSaffron;
+                color: $brandGold
             }
         }     
 
@@ -379,7 +379,7 @@ main{
                 button{
                     @include page-button-style;
                     width: 200px;
-                    background-color: $brandSaffron;
+                    background-color: $brandGold;
                     margin-top: 0;
                     transition: background-color 330ms ease-in-out;
                     &:hover{
@@ -630,7 +630,7 @@ main{
                  color: $brandWhite;
               }
               h4{
-                  color: $brandGold;
+                  color: $brandSaffron;
                   margin: 15px 0px;
               } 
               div{
@@ -692,7 +692,7 @@ main{
                 button{
                     @include page-button-style;
                     width: 200px;
-                    background-color: $brandSaffron;
+                    background-color: $brandGold;
                     margin-top: 0;
                     transition:  background-color 330ms ease-in-out;
                     &:hover{
@@ -795,7 +795,7 @@ footer{
                 cursor: pointer;
                 transition: color 300ms ease-in-out;
                 &:hover{
-                    color: $brandGold;
+                    color: $brandSaffron;
                 }
             }
             p{
@@ -844,7 +844,7 @@ footer{
                     font-weight: bold;
                     transition: color 300ms ease-in-out;
                     &:hover{
-                        color: $brandGold;
+                        color: $brandSaffron;
                     }
                 }
             }
