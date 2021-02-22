@@ -136,11 +136,13 @@ header{
                 font-size: 40px;
                 margin-bottom: 40px;
                 width: 650px;
+                font-weight: lighter;
                 color: $brandWhite;
             }
             span{
                 color: $brandPumice;
                 font-size: 25px;
+                font-family: $pageFont;
             }
             
             .jumbotron-controls{
@@ -167,7 +169,7 @@ header{
         .lastet-book{
             @include flex-col;
             align-self: flex-end;
-            height: 90%;
+            height: 96%;
             width: 35%;
 
             .book-image{
@@ -264,16 +266,17 @@ main{
         text-align: center;
         h2{
            @include coursiveTitle;
-            font-size: 65px;
-            margin-bottom: 35px;
+            font-size: 75px;
+            margin: 35px 0px;
         }
         p{
-            font-size: 30px;
+            font-size: 23px;
             color: $brandBlack;
             line-height: 45px;
         }
         button{
            @include page-button-style;
+           font-weight: bold;
            transition: background-color 330ms ease-in-out;
            &:hover{
             background-color: $brandLagoon;
@@ -285,6 +288,7 @@ main{
         width: 100%;
         height: 140px;
         justify-content: center;
+        margin-top: 80px;
         background-color: $brandPink;
         ul{
             @include flex-row;
@@ -355,6 +359,7 @@ main{
         @include flex-col;
         align-items: center;
         width: 100%;
+        margin-top: 50px;
         &-header{
             @include flex-row;
             justify-content: space-around;
@@ -382,6 +387,7 @@ main{
                 button{
                     @include page-button-style;
                     width: 200px;
+                    font-weight: bold;
                     background-color: $brandGold;
                     margin-top: 0;
                     transition: background-color 330ms ease-in-out;
@@ -414,6 +420,9 @@ main{
                 }
                 &:hover h2,&:hover h4,&:hover p,&:hover div{
                     transform: scale(0.9);
+                }
+                &:hover h2{
+                   padding-bottom: 40px;
                 }
                 
                 h2{
@@ -460,18 +469,20 @@ main{
                 div:nth-child(2),div:nth-child(4){
                     align-self: flex-start;
                     color: $brandLightGrey;
+                    font-weight: bold;
                     img{
                         vertical-align: middle;
                         margin-right: 10px;
                     }
-                    span{
-                        color: $brandGrey;
+                    span{        
+                            color: $brandGrey;
                     }
                 }
                 .crities-journal-first,.crities-journal-second{
                    @include crities-journal-style;
                    h2{
                     font-family: $journalFont;
+                    font-weight: lighter;
                     }
                     p{
                     padding-top: 20px;
@@ -493,6 +504,7 @@ main{
     .upcoming-event-sec{
         @include flex-col;
         margin-top: 50px;
+        padding-bottom: 100px;
         align-items: center;
         width: 100%;
         background-color: $brandPink;
@@ -506,6 +518,7 @@ main{
             h2{
                 font-family: $journalFont;
                 font-size: 35px;
+                font-weight: lighter;
             }
             h4{
                 @include pageSubtitleH4Gold;
@@ -529,10 +542,11 @@ main{
                  align-self: center;
                  padding: 15px 0px;
                  width: 80%; 
-                 border-bottom: 1px solid $brandStone;
+                 font-weight: normal;
+                 border-bottom: 1px inset $brandStone;
              }
              p{
-                 padding-top: 5px;
+                 padding-top: 20px;
                  color: $brandGrey;
              }
              &:hover img{
@@ -555,7 +569,7 @@ main{
             height: 60%;
             width: 40%;
             h2{
-                font-size: 35px;
+                font-size: 40px;
                 font-family: $journalFont;
                 text-align: center;
                 font-weight: normal;
@@ -598,6 +612,7 @@ main{
         @include flex-col;
         align-items: center;
         width: 100%;
+        margin-top: 50px;
         background-color: $brandWhite;
         &-header{
             @include flex-col;
@@ -633,10 +648,12 @@ main{
                  padding: 15px 0px;
                  font-size: 30px;
                  color: $brandWhite;
+                 font-weight: normal;
+                 text-shadow: 1px 1px 0px #000;
               }
               h4{
                   color: $brandSaffron;
-                  margin: 15px 0px;
+                  margin: 15px 0px 40px 0px;
               } 
               div{
                   width: 60px;
@@ -666,6 +683,7 @@ main{
         @include flex-col;
         align-items: center;
         width: 100%;
+        padding-top: 50px;
         height: 880px;
         background-color: $brandPink;
         margin-top: 70px;
@@ -699,6 +717,7 @@ main{
                     width: 200px;
                     background-color: $brandGold;
                     margin-top: 0;
+                    margin-right: 100px;
                     transition:  background-color 330ms ease-in-out;
                     &:hover{
                         background-color: $brandSaffronLight;
@@ -756,6 +775,7 @@ main{
                     }
                     h3{
                         padding: 10px 0px;
+                        font-weight: normal;
                     }
                     span{
                         font-size: 14px;
@@ -773,6 +793,7 @@ main{
 footer{
     @include flex-col;
     color: $brandWhite;
+    font-family: $pageFont;
     justify-content: space-between;
     width: 100%;
     height: 450px;
@@ -791,7 +812,8 @@ footer{
             height: 100%;
             h4{
                 margin-top: 40px;
-                font-size: 23px;
+                font-size: 18px;
+                text-transform: uppercase;
             }
             ul{
                 list-style: none;
@@ -806,7 +828,8 @@ footer{
             }
             p{
                 margin: 45px 0px;
-                width: 200px;
+                width: 350px;
+                line-height: 25px;
                 color: $brandPumice;
             }
             i{
@@ -817,6 +840,9 @@ footer{
             }
             .contacts-specs{
                 color: $brandPumice;
+                li span{
+                    color: $brandWhite;
+                }
             }
         }
         &-logo{
@@ -839,8 +865,9 @@ footer{
         .footer-content{
             @include flex-col;
             align-items: center;
-           justify-content: flex-end;
+            justify-content: flex-end;
             width: 100%;
+            font-size: 14px;
             div:first-child{
                 color: $brandLightGrey;
 
@@ -861,9 +888,10 @@ footer{
                 justify-content: center;
                 align-self: flex-end;
                 margin-right: 150px;
-                border-radius: 2px;
+                border-top-left-radius: 2px;
+                border-top-right-radius: 2px;
                 width: 50px;
-                height: 40px;
+                height: 35px;
                 background-color: $brandGrey;
             }
         }

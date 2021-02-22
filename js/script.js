@@ -34,12 +34,12 @@ new Vue({
         price:'39',
         headerTitle:'Damon Vaughn',
         headerContent:'Best-selling author and the most influential public intellectual in the western world right now.',
-        headerSpan:'-The New York Times',
+        headerSpan:'- The New York Times',
         mailNewsletter:'',
         newsletterList:[],
         footerAbout:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo explicabo nobis corporis. Vero sed numquam quas animi asperiores sunt ullam? Debitis voluptates facilis placeat! ',
         footerMenuLeft:[{
-            name: 'Lastet Books',
+            name: 'Latest Books',
              url: 'www.test.it'
          },
          {
@@ -59,7 +59,7 @@ new Vue({
               url: 'www.test.it'
           }],
           contactInfo:{
-            address: '63 E.Studebaker Street Bolingbrook,IL 60440',
+            address: '63 E. Studebaker Street Bolingbrook,IL 60440',
             phone: '(800)000-0000',
             mobile:'(800)000-0000',
             email:'Info@your-company.com',

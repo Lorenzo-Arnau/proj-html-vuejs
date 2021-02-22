@@ -170,11 +170,13 @@ header .jumbotron-two .journal-desc h2 {
   font-size: 40px;
   margin-bottom: 40px;
   width: 650px;
+  font-weight: lighter;
   color: #FFFFFF;
 }
 header .jumbotron-two .journal-desc span {
   color: #BEC6BE;
   font-size: 25px;
+  font-family: "DM Sans", sans-serif;
 }
 header .jumbotron-two .journal-desc .jumbotron-controls {
   display: flex;
@@ -189,7 +191,7 @@ header .jumbotron-two .journal-desc .jumbotron-controls .left {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 48%;
+  width: 49%;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.7);
   border-bottom-left-radius: 5px;
@@ -200,7 +202,7 @@ header .jumbotron-two .journal-desc .jumbotron-controls .right {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 48%;
+  width: 49%;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.7);
   border-bottom-right-radius: 5px;
@@ -210,7 +212,7 @@ header .jumbotron-two .lastet-book {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
-  height: 90%;
+  height: 96%;
   width: 35%;
 }
 header .jumbotron-two .lastet-book .book-image {
@@ -281,6 +283,7 @@ header .jumbotron-two .lastet-book .buy-on-sec-button-container .button-appstore
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-weight: bold;
   justify-content: center;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
@@ -299,6 +302,7 @@ header .jumbotron-two .lastet-book .buy-on-sec-button-container .button-amazon {
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-weight: bold;
   justify-content: center;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
@@ -326,11 +330,11 @@ main .author-meet-sec h2 {
   color: #69a0ff;
   font-family: "Kristi", cursive;
   font-weight: lighter;
-  font-size: 65px;
-  margin-bottom: 35px;
+  font-size: 75px;
+  margin: 35px 0px;
 }
 main .author-meet-sec p {
-  font-size: 30px;
+  font-size: 23px;
   color: #030303;
   line-height: 45px;
 }
@@ -344,6 +348,7 @@ main .author-meet-sec button {
   color: #FFFFFF;
   cursor: pointer;
   background-color: #3DA698;
+  font-weight: bold;
   transition: background-color 330ms ease-in-out;
 }
 main .author-meet-sec button:hover {
@@ -355,6 +360,7 @@ main .commercial-partner-sec {
   width: 100%;
   height: 140px;
   justify-content: center;
+  margin-top: 80px;
   background-color: #FEF7E9;
 }
 main .commercial-partner-sec ul {
@@ -429,6 +435,7 @@ main .crities-say-section {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-top: 50px;
 }
 main .crities-say-section-header {
   display: flex;
@@ -471,6 +478,7 @@ main .crities-say-section-header .crities-header-button button {
   cursor: pointer;
   background-color: #3DA698;
   width: 200px;
+  font-weight: bold;
   background-color: #E1AA40;
   margin-top: 0;
   transition: background-color 330ms ease-in-out;
@@ -504,6 +512,9 @@ main .crities-say-section-content-article:hover {
 }
 main .crities-say-section-content-article:hover h2, main .crities-say-section-content-article:hover h4, main .crities-say-section-content-article:hover p, main .crities-say-section-content-article:hover div {
   transform: scale(0.9);
+}
+main .crities-say-section-content-article:hover h2 {
+  padding-bottom: 40px;
 }
 main .crities-say-section-content-article h2 {
   font-size: 50px;
@@ -548,6 +559,7 @@ main .crities-say-section-content-journal {
 main .crities-say-section-content-journal div:nth-child(2), main .crities-say-section-content-journal div:nth-child(4) {
   align-self: flex-start;
   color: #868586;
+  font-weight: bold;
 }
 main .crities-say-section-content-journal div:nth-child(2) img, main .crities-say-section-content-journal div:nth-child(4) img {
   vertical-align: middle;
@@ -566,6 +578,7 @@ main .crities-say-section-content-journal .crities-journal-first, main .crities-
 }
 main .crities-say-section-content-journal .crities-journal-first h2, main .crities-say-section-content-journal .crities-journal-second h2 {
   font-family: "DM Serif Display", serif;
+  font-weight: lighter;
 }
 main .crities-say-section-content-journal .crities-journal-first p, main .crities-say-section-content-journal .crities-journal-second p {
   padding-top: 20px;
@@ -582,6 +595,7 @@ main .upcoming-event-sec {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
+  padding-bottom: 100px;
   align-items: center;
   width: 100%;
   background-color: #FEF7E9;
@@ -597,6 +611,7 @@ main .upcoming-event-sec-header {
 main .upcoming-event-sec-header h2 {
   font-family: "DM Serif Display", serif;
   font-size: 35px;
+  font-weight: lighter;
 }
 main .upcoming-event-sec-header h4 {
   margin-top: 25px;
@@ -630,10 +645,11 @@ main .upcoming-event-sec-content .event-one h3, main .upcoming-event-sec-content
   align-self: center;
   padding: 15px 0px;
   width: 80%;
-  border-bottom: 1px solid #96A4A3;
+  font-weight: normal;
+  border-bottom: 1px inset #96A4A3;
 }
 main .upcoming-event-sec-content .event-one p, main .upcoming-event-sec-content .event-two p, main .upcoming-event-sec-content .event-three p {
-  padding-top: 5px;
+  padding-top: 20px;
   color: #434343;
 }
 main .upcoming-event-sec-content .event-one:hover img, main .upcoming-event-sec-content .event-two:hover img, main .upcoming-event-sec-content .event-three:hover img {
@@ -657,7 +673,7 @@ main .newsletter-sec-content {
   width: 40%;
 }
 main .newsletter-sec-content h2 {
-  font-size: 35px;
+  font-size: 40px;
   font-family: "DM Serif Display", serif;
   text-align: center;
   font-weight: normal;
@@ -715,6 +731,7 @@ main .dig-deeper-sec {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-top: 50px;
   background-color: #FFFFFF;
 }
 main .dig-deeper-sec-header {
@@ -762,10 +779,12 @@ main .dig-deeper-sec-content .fact-one h2, main .dig-deeper-sec-content .fact-tw
   padding: 15px 0px;
   font-size: 30px;
   color: #FFFFFF;
+  font-weight: normal;
+  text-shadow: 1px 1px 0px #000;
 }
 main .dig-deeper-sec-content .fact-one h4, main .dig-deeper-sec-content .fact-two h4, main .dig-deeper-sec-content .fact-three h4 {
   color: #69a0ff;
-  margin: 15px 0px;
+  margin: 15px 0px 40px 0px;
 }
 main .dig-deeper-sec-content .fact-one div, main .dig-deeper-sec-content .fact-two div, main .dig-deeper-sec-content .fact-three div {
   width: 60px;
@@ -793,6 +812,7 @@ main .recent-articles-section {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding-top: 50px;
   height: 880px;
   background-color: #FEF7E9;
   margin-top: 70px;
@@ -841,6 +861,7 @@ main .recent-articles-section-header .articles-header-button button {
   width: 200px;
   background-color: #E1AA40;
   margin-top: 0;
+  margin-right: 100px;
   transition: background-color 330ms ease-in-out;
 }
 main .recent-articles-section-header .articles-header-button button:hover {
@@ -900,6 +921,7 @@ main .recent-articles-section-content-booklist .booklist-one img, main .recent-a
 }
 main .recent-articles-section-content-booklist .booklist-one h3, main .recent-articles-section-content-booklist .booklist-two h3 {
   padding: 10px 0px;
+  font-weight: normal;
 }
 main .recent-articles-section-content-booklist .booklist-one span, main .recent-articles-section-content-booklist .booklist-two span {
   font-size: 14px;
@@ -910,6 +932,7 @@ footer {
   display: flex;
   flex-direction: column;
   color: #FFFFFF;
+  font-family: "DM Sans", sans-serif;
   justify-content: space-between;
   width: 100%;
   height: 450px;
@@ -933,7 +956,8 @@ footer .footer-sec-one-first-menu, footer .footer-sec-one-second-menu, footer .f
 }
 footer .footer-sec-one-first-menu h4, footer .footer-sec-one-second-menu h4, footer .footer-sec-one-third-menu h4 {
   margin-top: 40px;
-  font-size: 23px;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 footer .footer-sec-one-first-menu ul, footer .footer-sec-one-second-menu ul, footer .footer-sec-one-third-menu ul {
   list-style: none;
@@ -948,7 +972,8 @@ footer .footer-sec-one-first-menu ul li:hover, footer .footer-sec-one-second-men
 }
 footer .footer-sec-one-first-menu p, footer .footer-sec-one-second-menu p, footer .footer-sec-one-third-menu p {
   margin: 45px 0px;
-  width: 200px;
+  width: 350px;
+  line-height: 25px;
   color: #BEC6BE;
 }
 footer .footer-sec-one-first-menu i, footer .footer-sec-one-second-menu i, footer .footer-sec-one-third-menu i {
@@ -959,6 +984,9 @@ footer .footer-sec-one-first-menu i:hover, footer .footer-sec-one-second-menu i:
 }
 footer .footer-sec-one-first-menu .contacts-specs, footer .footer-sec-one-second-menu .contacts-specs, footer .footer-sec-one-third-menu .contacts-specs {
   color: #BEC6BE;
+}
+footer .footer-sec-one-first-menu .contacts-specs li span, footer .footer-sec-one-second-menu .contacts-specs li span, footer .footer-sec-one-third-menu .contacts-specs li span {
+  color: #FFFFFF;
 }
 footer .footer-sec-one-logo {
   display: flex;
@@ -984,6 +1012,7 @@ footer .footer-sec-two .footer-content {
   align-items: center;
   justify-content: flex-end;
   width: 100%;
+  font-size: 14px;
 }
 footer .footer-sec-two .footer-content div:first-child {
   color: #868586;
@@ -1005,8 +1034,9 @@ footer .footer-sec-two .footer-content .return-button {
   justify-content: center;
   align-self: flex-end;
   margin-right: 150px;
-  border-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
   width: 50px;
-  height: 40px;
+  height: 35px;
   background-color: #434343;
 }
