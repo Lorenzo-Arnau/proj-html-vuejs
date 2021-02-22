@@ -47,6 +47,7 @@
 @mixin coursiveTitle {
     color: $brandSaffron;
     font-family: $fontCoursive;
+    font-weight: lighter;
 }
 @mixin pageSubtitleH4Gold {
     margin-top: 25px;

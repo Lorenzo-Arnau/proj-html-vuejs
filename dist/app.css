@@ -74,6 +74,7 @@ header .jumbotron-one .author-name {
   flex-direction: row;
   color: #69a0ff;
   font-family: "Kristi", cursive;
+  font-weight: lighter;
   justify-content: flex-start;
   align-items: flex-end;
   margin-left: 4px;
@@ -322,6 +323,7 @@ main .author-meet-sec {
 main .author-meet-sec h2 {
   color: #69a0ff;
   font-family: "Kristi", cursive;
+  font-weight: lighter;
   font-size: 65px;
   margin-bottom: 35px;
 }
