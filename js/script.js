@@ -36,6 +36,7 @@ new Vue({
         headerContent:'Best-selling author and the most influential public intellectual in the western world right now.',
         headerSpan:'-The New York Times',
         mailNewsletter:'',
+        newsletterList:[],
         footerAbout:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo explicabo nobis corporis. Vero sed numquam quas animi asperiores sunt ullam? Debitis voluptates facilis placeat! ',
         footerMenuLeft:[{
             name: 'Lastet Books',
@@ -130,6 +131,11 @@ new Vue({
             this.headerSpan='-The New York Times';
             break;
         }
+      },
+      sendMail:function(){
+        this.newsletterList.push(this.mailNewsletter);
+        this.mailNewsletter = '';
+        console.log(this.newsletterList);
       }
     },
   });
