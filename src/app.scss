@@ -194,6 +194,7 @@ header{
                         margin-top: 55px;
                         font-size: 25px;
                         color: $brandBlack;
+                        font-weight: lighter;
                         font-family: $journalFont;
                     }
                     h4{
@@ -268,7 +269,6 @@ main{
         }
         p{
             font-size: 30px;
-            font-weight: bold;
             color: $brandBlack;
             line-height: 45px;
         }
@@ -327,13 +327,16 @@ main{
                    font-size: 35px;
                    color: $brandWhite;
                    font-family: $journalFont;
+                   font-weight: lighter
                }
                h4{
                    @include pageSubtitleH4Gold;
+                   font-size: 20px;
                }
                p{
                    margin-top: 18px;
-                   color: $brandPumice;
+                   font-size: 18px;
+                   color: $brandLightGrey;
 
                }
 
@@ -414,7 +417,7 @@ main{
                 }
                 
                 h2{
-                    font-size: 45px;
+                    font-size: 50px;
                     padding-bottom: 20px;
                     font-weight: normal;
                     font-family: $journalFont;
@@ -422,12 +425,14 @@ main{
                     transition: transform 330ms ease-in-out;
                 }
                 h4{
-                   font-size: 20px;
-                   padding: 20px 0px;
+                   font-size: 25px;
+                   padding-top: 30px;
+                   margin-top: 30px;
                    transition: transform 330ms ease-in-out;
                 }
                 p{
                     padding: 20px 150px;
+                    font-size: 18px;
                     transition: transform 330ms ease-in-out;
                 }
                 div{
@@ -565,7 +570,7 @@ main{
               align-self: center;
               input{
                   height: 45px;
-                  width: 200px;
+                  width: 250px;
                   border: none;
                   border-radius: 5px;
                   margin-right: 10px;
@@ -754,6 +759,7 @@ main{
                     }
                     span{
                         font-size: 14px;
+                        color: $brandLightGrey;
                     }
                 }              
             }           

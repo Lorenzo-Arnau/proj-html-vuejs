@@ -237,10 +237,12 @@ header .jumbotron-two .lastet-book .book-image .book-release h3 {
   margin-top: 55px;
   font-size: 25px;
   color: #030303;
+  font-weight: lighter;
   font-family: "DM Serif Display", serif;
 }
 header .jumbotron-two .lastet-book .book-image .book-release h4 {
   margin-top: 25px;
+  font-size: 18px;
   text-transform: uppercase;
   color: #69a0ff;
 }
@@ -329,7 +331,6 @@ main .author-meet-sec h2 {
 }
 main .author-meet-sec p {
   font-size: 30px;
-  font-weight: bold;
   color: #030303;
   line-height: 45px;
 }
@@ -400,15 +401,19 @@ main .audiobook-sec-content-desc h2 {
   font-size: 35px;
   color: #FFFFFF;
   font-family: "DM Serif Display", serif;
+  font-weight: lighter;
 }
 main .audiobook-sec-content-desc h4 {
   margin-top: 25px;
+  font-size: 18px;
   text-transform: uppercase;
   color: #69a0ff;
+  font-size: 20px;
 }
 main .audiobook-sec-content-desc p {
   margin-top: 18px;
-  color: #BEC6BE;
+  font-size: 18px;
+  color: #868586;
 }
 main .audiobook-sec-content-desc ul {
   display: flex;
@@ -443,6 +448,7 @@ main .crities-say-section-header .crities-header-title h2 {
 }
 main .crities-say-section-header .crities-header-title h4 {
   margin-top: 25px;
+  font-size: 18px;
   text-transform: uppercase;
   color: #69a0ff;
   color: #3DA698;
@@ -500,7 +506,7 @@ main .crities-say-section-content-article:hover h2, main .crities-say-section-co
   transform: scale(0.9);
 }
 main .crities-say-section-content-article h2 {
-  font-size: 45px;
+  font-size: 50px;
   padding-bottom: 20px;
   font-weight: normal;
   font-family: "DM Serif Display", serif;
@@ -508,12 +514,14 @@ main .crities-say-section-content-article h2 {
   transition: transform 330ms ease-in-out;
 }
 main .crities-say-section-content-article h4 {
-  font-size: 20px;
-  padding: 20px 0px;
+  font-size: 25px;
+  padding-top: 30px;
+  margin-top: 30px;
   transition: transform 330ms ease-in-out;
 }
 main .crities-say-section-content-article p {
   padding: 20px 150px;
+  font-size: 18px;
   transition: transform 330ms ease-in-out;
 }
 main .crities-say-section-content-article div {
@@ -592,6 +600,7 @@ main .upcoming-event-sec-header h2 {
 }
 main .upcoming-event-sec-header h4 {
   margin-top: 25px;
+  font-size: 18px;
   text-transform: uppercase;
   color: #69a0ff;
   margin-top: 10px;
@@ -656,6 +665,7 @@ main .newsletter-sec-content h2 {
 }
 main .newsletter-sec-content h4 {
   margin-top: 25px;
+  font-size: 18px;
   text-transform: uppercase;
   color: #69a0ff;
   text-align: center;
@@ -665,7 +675,7 @@ main .newsletter-sec-content div {
 }
 main .newsletter-sec-content div input {
   height: 45px;
-  width: 200px;
+  width: 250px;
   border: none;
   border-radius: 5px;
   margin-right: 10px;
@@ -722,6 +732,7 @@ main .dig-deeper-sec-header h2 {
 }
 main .dig-deeper-sec-header h4 {
   margin-top: 25px;
+  font-size: 18px;
   text-transform: uppercase;
   color: #69a0ff;
   color: #3DA698;
@@ -804,6 +815,7 @@ main .recent-articles-section-header .articles-header-title h2 {
 }
 main .recent-articles-section-header .articles-header-title h4 {
   margin-top: 25px;
+  font-size: 18px;
   text-transform: uppercase;
   color: #69a0ff;
   margin-top: 10px;
@@ -891,6 +903,7 @@ main .recent-articles-section-content-booklist .booklist-one h3, main .recent-ar
 }
 main .recent-articles-section-content-booklist .booklist-one span, main .recent-articles-section-content-booklist .booklist-two span {
   font-size: 14px;
+  color: #868586;
 }
 
 footer {
