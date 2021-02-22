@@ -513,12 +513,9 @@ main .crities-say-section-content-article:hover {
 main .crities-say-section-content-article:hover h2, main .crities-say-section-content-article:hover h4, main .crities-say-section-content-article:hover p, main .crities-say-section-content-article:hover div {
   transform: scale(0.9);
 }
-main .crities-say-section-content-article:hover h2 {
-  padding-bottom: 40px;
-}
 main .crities-say-section-content-article h2 {
   font-size: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   font-weight: normal;
   font-family: "DM Serif Display", serif;
   border-bottom: 1px solid #868586;
