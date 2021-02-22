@@ -17,7 +17,7 @@ header{
         @include flex-row;
         width: 80%;
         justify-content: space-between;
-        height: 200px;
+        height: 250px;
         margin:0 auto ;
 
         ul{
@@ -28,9 +28,10 @@ header{
             height:100%;
         }
         ul li{
-            line-height: 70px;
+            line-height: 80px;
             color: $brandWhite;
             cursor: pointer;
+            transition: border-top 170ms ease-in-out;
             &:hover{             
                 border-top: 6px solid $brandSaffron;
                 color: $brandSaffron;
@@ -75,22 +76,17 @@ header{
 
         .demo-price{
             @include flex-col;
-            height: 100%;
-            width: 60px;
+            position: fixed;
+            right: 10px;
+            top: 150px;
+            height: 140px;
+            width: 70px;
             align-items: flex-end;
             justify-content: space-between;
         
             .demo{
                 @include flex-col;
-                justify-content: center;
-                height: 48%;
-                width: 100%;
-                background-color: $brandWhite;
-                text-align: center;
-                margin-right: 10px;
-                border-radius: 5px;
-                cursor: pointer;
-
+                @include sideBoxFixed-style;               
                 i{
                     font-size: 25px;
                 }
@@ -100,17 +96,9 @@ header{
             }
             .price{
                 @include flex-col;
-                justify-content: center;
-                height: 48%;
-                width: 100%;
-                background-color:$brandWhite;
-                text-align: center;
+                @include sideBoxFixed-style;
                 font-size: 25px;
-                margin-right: 10px;
-                border-radius: 5px;
                 color: #65BC7B;
-                cursor: pointer;
-
                 sup{
                     font-size: 12px;
                     
@@ -127,7 +115,7 @@ header{
     .jumbotron-two{
         @include flex-row;
         width: 90%;
-        height: calc(100% - 320px);
+        height: calc(100% - 370px);
         align-self: flex-end;
         justify-content: flex-end;
 
@@ -139,6 +127,7 @@ header{
             h2{
                 font-size: 40px;
                 margin-bottom: 40px;
+                width: 650px;
             }
             span{
                 color: $brandPumice;
@@ -275,7 +264,7 @@ main{
         }
         button{
            @include page-button-style;
-
+           transition: background-color 330ms ease-in-out;
            &:hover{
             background-color: $brandLagoon;
            }
@@ -382,6 +371,7 @@ main{
                     width: 200px;
                     background-color: $brandSaffron;
                     margin-top: 0;
+                    transition: background-color 330ms ease-in-out;
                     &:hover{
                         background-color: $brandSaffronLight;
                     }
@@ -405,6 +395,10 @@ main{
                 background-position: center;
                 border-bottom-right-radius: 100px;
                 color: $brandWhite;
+                transition: transform 330ms ease-in-out;
+                &:hover{
+                    transform: scale(1.1);
+                }
                 h2{
                     font-size: 45px;
                     padding-bottom: 20px;
@@ -505,6 +499,9 @@ main{
              @include events-style;
              @include flex-col;
              background-color: $brandWhite;
+             img{               
+                 transition: opacity 330ms ease-in-out;
+             }
              h3{
                  align-self: center;
                  padding: 15px 0px;
@@ -514,9 +511,6 @@ main{
              p{
                  padding-top: 5px;
                  color: $brandGrey;
-             }
-             &:hover{
-                 transform: scale(0.9);
              }
              &:hover img{
                opacity: 0.7;
@@ -564,6 +558,10 @@ main{
               button{
                   @include page-button-style;
                   width: 100px;
+                  transition: background-color 330ms ease-in-out;
+                  &:hover{
+                  background-color: $brandLagoon;
+                  }
               }
             }
             p{
@@ -605,7 +603,7 @@ main{
              @include events-style;
              @include flex-col;
              justify-content: flex-end;
-
+             transition: transform 250ms ease-in-out;
               h2{
                  padding: 15px 0px;
                  font-size: 30px;
@@ -624,6 +622,7 @@ main{
               &:hover{
                   box-shadow: 1px 1px 10px $brandGrey;
                   transform: scale(1.1);
+                  opacity: 1;
               }       
             }
             .fact-one{
@@ -681,6 +680,7 @@ main{
                     width: 200px;
                     background-color: $brandSaffron;
                     margin-top: 0;
+                    transition:  background-color 330ms ease-in-out;
                     &:hover{
                         background-color: $brandSaffronLight;
                     }
@@ -700,9 +700,14 @@ main{
                 width: 65%;
                 height: 100%;
                 justify-content: center;
+                
                 img{
                     align-self: center;
                     width: 80%;
+                    transition: opacity 330ms ease-in-out;
+                    &:hover{
+                        opacity: 0.9;
+                    }
                 }
                 h3{
                     margin-top: 20px;
@@ -774,6 +779,10 @@ footer{
             ul li{
                 margin: 20px 0px;
                 cursor: pointer;
+                transition: color 300ms ease-in-out;
+                &:hover{
+                    color: $brandGold;
+                }
             }
             p{
                 margin: 45px 0px;
@@ -815,6 +824,11 @@ footer{
                 span{
                     color: $brandWhite;
                     cursor: pointer;
+                    font-weight: bold;
+                    transition: color 300ms ease-in-out;
+                    &:hover{
+                        color: $brandGold;
+                    }
                 }
             }
             .return-button{
@@ -834,3 +848,4 @@ footer{
         
     }
 }
+// footer end

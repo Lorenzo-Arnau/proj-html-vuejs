@@ -32,6 +32,8 @@ new Vue({
             ], 
             
         price:'39',
+        headerTitle:'Damon Vaughn',
+        headerContent:'Best-selling author and the most influential public intellectual in the western world right now.',
         mailNewsletter:'',
         footerAbout:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo explicabo nobis corporis. Vero sed numquam quas animi asperiores sunt ullam? Debitis voluptates facilis placeat! ',
         footerMenuLeft:[{

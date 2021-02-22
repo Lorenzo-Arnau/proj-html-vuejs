@@ -18,7 +18,7 @@ header .navbar {
   flex-direction: row;
   width: 80%;
   justify-content: space-between;
-  height: 200px;
+  height: 250px;
   margin: 0 auto;
 }
 header .navbar ul {
@@ -30,9 +30,10 @@ header .navbar ul {
   height: 100%;
 }
 header .navbar ul li {
-  line-height: 70px;
+  line-height: 80px;
   color: #FFFFFF;
   cursor: pointer;
+  transition: border-top 170ms ease-in-out;
 }
 header .navbar ul li:hover {
   border-top: 6px solid #F3B329;
@@ -76,8 +77,11 @@ header .jumbotron-one .author-name {
 header .jumbotron-one .demo-price {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 60px;
+  position: fixed;
+  right: 10px;
+  top: 150px;
+  height: 140px;
+  width: 70px;
   align-items: flex-end;
   justify-content: space-between;
 }
@@ -89,7 +93,6 @@ header .jumbotron-one .demo-price .demo {
   width: 100%;
   background-color: #FFFFFF;
   text-align: center;
-  margin-right: 10px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -107,11 +110,10 @@ header .jumbotron-one .demo-price .price {
   width: 100%;
   background-color: #FFFFFF;
   text-align: center;
-  font-size: 25px;
-  margin-right: 10px;
   border-radius: 5px;
-  color: #65BC7B;
   cursor: pointer;
+  font-size: 25px;
+  color: #65BC7B;
 }
 header .jumbotron-one .demo-price .price sup {
   font-size: 12px;
@@ -124,7 +126,7 @@ header .jumbotron-two {
   display: flex;
   flex-direction: row;
   width: 90%;
-  height: calc(100% - 320px);
+  height: calc(100% - 370px);
   align-self: flex-end;
   justify-content: flex-end;
 }
@@ -137,6 +139,7 @@ header .jumbotron-two .journal-desc {
 header .jumbotron-two .journal-desc h2 {
   font-size: 40px;
   margin-bottom: 40px;
+  width: 650px;
 }
 header .jumbotron-two .journal-desc span {
   color: #BEC6BE;
@@ -240,7 +243,7 @@ header .jumbotron-two .lastet-book .buy-on-sec-button-container .button-appstore
   border: 1px groove #A4D2C2;
   cursor: pointer;
   background-color: #F5FCFA;
-  box-shadow: 0px 0px 18px #51BFC7;
+  box-shadow: 0px 0px 5px #51BFC7;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -258,7 +261,7 @@ header .jumbotron-two .lastet-book .buy-on-sec-button-container .button-amazon {
   border: 1px groove #A4D2C2;
   cursor: pointer;
   background-color: #F5FCFA;
-  box-shadow: 0px 0px 18px #51BFC7;
+  box-shadow: 0px 0px 5px #51BFC7;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -307,6 +310,7 @@ main .author-meet-sec button {
   color: #FFFFFF;
   cursor: pointer;
   background-color: #3DA698;
+  transition: background-color 330ms ease-in-out;
 }
 main .author-meet-sec button:hover {
   background-color: #027986;
@@ -430,6 +434,7 @@ main .crities-say-section-header .crities-header-button button {
   width: 200px;
   background-color: #F3B329;
   margin-top: 0;
+  transition: background-color 330ms ease-in-out;
 }
 main .crities-say-section-header .crities-header-button button:hover {
   background-color: #F4A700;
@@ -453,6 +458,10 @@ main .crities-say-section-content-article {
   background-position: center;
   border-bottom-right-radius: 100px;
   color: #FFFFFF;
+  transition: transform 330ms ease-in-out;
+}
+main .crities-say-section-content-article:hover {
+  transform: scale(1.1);
 }
 main .crities-say-section-content-article h2 {
   font-size: 45px;
@@ -565,6 +574,9 @@ main .upcoming-event-sec-content .event-one, main .upcoming-event-sec-content .e
 main .upcoming-event-sec-content .event-one img, main .upcoming-event-sec-content .event-two img, main .upcoming-event-sec-content .event-three img {
   width: 100%;
 }
+main .upcoming-event-sec-content .event-one img, main .upcoming-event-sec-content .event-two img, main .upcoming-event-sec-content .event-three img {
+  transition: opacity 330ms ease-in-out;
+}
 main .upcoming-event-sec-content .event-one h3, main .upcoming-event-sec-content .event-two h3, main .upcoming-event-sec-content .event-three h3 {
   align-self: center;
   padding: 15px 0px;
@@ -574,9 +586,6 @@ main .upcoming-event-sec-content .event-one h3, main .upcoming-event-sec-content
 main .upcoming-event-sec-content .event-one p, main .upcoming-event-sec-content .event-two p, main .upcoming-event-sec-content .event-three p {
   padding-top: 5px;
   color: #434343;
-}
-main .upcoming-event-sec-content .event-one:hover, main .upcoming-event-sec-content .event-two:hover, main .upcoming-event-sec-content .event-three:hover {
-  transform: scale(0.9);
 }
 main .upcoming-event-sec-content .event-one:hover img, main .upcoming-event-sec-content .event-two:hover img, main .upcoming-event-sec-content .event-three:hover img {
   opacity: 0.7;
@@ -641,6 +650,10 @@ main .newsletter-sec-content div button {
   cursor: pointer;
   background-color: #3DA698;
   width: 100px;
+  transition: background-color 330ms ease-in-out;
+}
+main .newsletter-sec-content div button:hover {
+  background-color: #027986;
 }
 main .newsletter-sec-content p {
   text-align: center;
@@ -687,6 +700,7 @@ main .dig-deeper-sec-content .fact-one, main .dig-deeper-sec-content .fact-two, 
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  transition: transform 250ms ease-in-out;
 }
 main .dig-deeper-sec-content .fact-one img, main .dig-deeper-sec-content .fact-two img, main .dig-deeper-sec-content .fact-three img {
   width: 100%;
@@ -709,6 +723,7 @@ main .dig-deeper-sec-content .fact-one div, main .dig-deeper-sec-content .fact-t
 main .dig-deeper-sec-content .fact-one:hover, main .dig-deeper-sec-content .fact-two:hover, main .dig-deeper-sec-content .fact-three:hover {
   box-shadow: 1px 1px 10px #434343;
   transform: scale(1.1);
+  opacity: 1;
 }
 main .dig-deeper-sec-content .fact-one {
   background-image: url("../img/boxes/box-1.jpg");
@@ -778,6 +793,7 @@ main .recent-articles-section-header .articles-header-button button {
   width: 200px;
   background-color: #F3B329;
   margin-top: 0;
+  transition: background-color 330ms ease-in-out;
 }
 main .recent-articles-section-header .articles-header-button button:hover {
   background-color: #F4A700;
@@ -800,6 +816,10 @@ main .recent-articles-section-content-creativity {
 main .recent-articles-section-content-creativity img {
   align-self: center;
   width: 80%;
+  transition: opacity 330ms ease-in-out;
+}
+main .recent-articles-section-content-creativity img:hover {
+  opacity: 0.9;
 }
 main .recent-articles-section-content-creativity h3 {
   margin-top: 20px;
@@ -872,6 +892,10 @@ footer .footer-sec-one-first-menu ul, footer .footer-sec-one-second-menu ul, foo
 footer .footer-sec-one-first-menu ul li, footer .footer-sec-one-second-menu ul li, footer .footer-sec-one-third-menu ul li {
   margin: 20px 0px;
   cursor: pointer;
+  transition: color 300ms ease-in-out;
+}
+footer .footer-sec-one-first-menu ul li:hover, footer .footer-sec-one-second-menu ul li:hover, footer .footer-sec-one-third-menu ul li:hover {
+  color: #E1AA40;
 }
 footer .footer-sec-one-first-menu p, footer .footer-sec-one-second-menu p, footer .footer-sec-one-third-menu p {
   margin: 45px 0px;
@@ -915,6 +939,11 @@ footer .footer-sec-two .footer-content div:first-child {
 footer .footer-sec-two .footer-content div:first-child span {
   color: #FFFFFF;
   cursor: pointer;
+  font-weight: bold;
+  transition: color 300ms ease-in-out;
+}
+footer .footer-sec-two .footer-content div:first-child span:hover {
+  color: #E1AA40;
 }
 footer .footer-sec-two .footer-content .return-button {
   display: flex;
