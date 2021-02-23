@@ -46,7 +46,7 @@
     background-color: $brandCyano;
 }
 @mixin coursiveTitle {
-    color: $brandSaffron;
+    color: $brandPrincipalColor;
     font-family: $fontCoursive;
     font-weight: lighter;
 }
@@ -54,7 +54,7 @@
     margin-top: 25px;
     font-size: 18px;
     text-transform: uppercase;
-    color: $brandSaffron;
+    color: $brandPrincipalColor;
 }
 @mixin crities-journal-style {
     height: 40%;
@@ -63,7 +63,7 @@
     text-align: center;
     padding: 25px;
     position: relative;
-   
+
 }
 @mixin events-style {
     width: 30%;

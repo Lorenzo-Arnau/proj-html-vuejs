@@ -2,876 +2,985 @@
 @import "variables";
 @import "typography";
 *{
-    @include reset;
+  @include reset;
 }
 //header start
 header{
-    @include flex-col;
-    @include image-bg-centred-c;
-    font-family: $pageFont;
-    width: 100%;
-    height: 800px;
+  @include flex-col;
+  @include image-bg-centred-c;
+  font-family: $pageFont;
+  width: 100%;
+  height: 800px;
 
-    .navbar{
+  .navbar{
+    @include flex-row;
+    width: 80%;
+    justify-content: space-between;
+    height: 250px;
+    margin:0 auto ;
+
+    a{
+      text-decoration: none;
+      color: $brandWhite;
+    }
+
+    ul{
+      @include flex-row;
+      list-style: none;
+      justify-content: space-between;
+      align-items: center;
+      height:100%;
+    }
+
+    ul li{
+      line-height: 85px;
+      color: $brandWhite;
+      cursor: pointer;
+      transition: border-top 170ms ease-in-out;
+      &:hover{
+        border-top: 6px solid $brandGold;
+        color: $brandGold;
+      }
+      &:hover a{
+        color: $brandGold
+      }
+    }
+
+    &-logo{
+      @include flex-row;
+      @include flex-centred;
+      height: 100%;
+      width: 250px;
+    }
+
+    &-menu{
+      width: 50%;
+      height: 35%;
+      margin-right: 40px;
+      justify-self: flex-end;
+    }
+  }
+
+  .jumbotron-one{
+    @include flex-row;
+    margin-top: 30px;
+    width: 81%;
+    height: 120px;
+    align-self: flex-end;
+    justify-content: space-between;
+
+    .author-name{
+      @include flex-row;
+      @include coursiveTitle;
+      justify-content: flex-start;
+      align-items: flex-end;
+      margin-left: 4px;
+      height: 100%;
+      width: calc(100% - 50px);
+      font-size: 50px;
+      @include headerAnimation;
+    }
+
+    .demo-price{
+      @include flex-col;
+      position: fixed;
+      right: 10px;
+      top: 150px;
+      height: 140px;
+      width: 70px;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      .demo{
+        @include flex-col;
+        @include sideBoxFixed-style;
+
+        i{
+          font-size: 25px;
+        }
+
+        span{
+          font-size: 12px;
+        }
+      }
+
+      .price{
+        @include flex-col;
+        @include sideBoxFixed-style;
+        font-size: 25px;
+        color: #65BC7B;
+        font-weight: 600;
+
+        sup{
+          font-size: 12px;
+        }
+
+        span:nth-child(2){
+          font-size: 12px;
+          color: $brandRifle;
+        }
+      }
+    }
+
+  }
+
+  .jumbotron-two{
+    @include flex-row;
+    width: 90%;
+    height: calc(100% - 370px);
+    align-self: flex-end;
+    justify-content: flex-end;
+
+    .journal-desc{
+      height: 100%;
+      width: 55%;
+      color: $brandWhite;
+      @include headerAnimation;
+
+      h2{
+        @include lighter-journal;
+        font-size: 40px;
+        margin-bottom: 40px;
+        width: 650px;
+        color: $brandWhite;
+      }
+
+      span{
+        color: $brandPumice;
+        font-size: 25px;
+        font-family: $pageFont;
+      }
+
+      .jumbotron-controls{
         @include flex-row;
-        width: 80%;
+        margin-top: 50px;
+        width: 120px;
+        height: 50px;
         justify-content: space-between;
-        height: 250px;
-        margin:0 auto ;
-        a{
-            text-decoration: none;
-            color: $brandWhite;
-        }
-        ul{
-            @include flex-row;
-            list-style: none;
-            justify-content: space-between;
-            align-items: center;
-            height:100%;
-        }
-        ul li{
-            line-height: 85px;
-            color: $brandWhite;
-            cursor: pointer;
-            transition: border-top 170ms ease-in-out;
-            &:hover{             
-                border-top: 6px solid $brandGold;
-                color: $brandGold;
-            }
-            &:hover a{
-                color: $brandGold
-            }
-        }     
 
-        &-logo{
-            @include flex-row;
-            @include flex-centred;
-            height: 100%;
-            width: 250px;       
+        .left{
+          @include flex-row;
+          @include jumbotron-controls;
+          border-bottom-left-radius:5px ;
+          border-top-left-radius: 5px;
         }
-        &-menu{
-            width: 50%;
-            height: 35%;
-            margin-right: 40px;
-            justify-self: flex-end;
+
+        .right{
+          @include flex-row;
+          @include jumbotron-controls;
+          border-bottom-right-radius:5px ;
+          border-top-right-radius: 5px;
         }
+      }
     }
 
-    .jumbotron-one{
+    .lastet-book{
+      @include flex-col;
+      align-self: flex-end;
+      height: 96%;
+      width: 35%;
+
+      .book-image{
         @include flex-row;
-        margin-top: 30px;
-        width: 81%;
-        height: 120px;
-        align-self: flex-end;
-        justify-content: space-between;
+        width: 100%;
+        height: 70%;
+        background-color:$brandWhite;
 
-        .author-name{
-            @include flex-row;
-            @include coursiveTitle;
-            justify-content: flex-start;
-            align-items: flex-end;
-            margin-left: 4px;
-            height: 100%;
-            width: calc(100% - 50px);
-            font-size: 50px;
-            @include headerAnimation;          
+        &-container{
+          @include flex-row;
+          align-items: flex-end;
+          justify-content: flex-end;
+          width: 50%;
+
+          img{
+            width: 70%;
+          }
         }
 
-        .demo-price{
-            @include flex-col;
-            position: fixed;
-            right: 10px;
-            top: 150px;
-            height: 140px;
-            width: 70px;
-            align-items: flex-end;
-            justify-content: space-between;
-        
-            .demo{
-                @include flex-col;
-                @include sideBoxFixed-style;               
-                i{
-                    font-size: 25px;
-                }
-                span{
-                    font-size: 12px;
-                }
-            }
-            .price{
-                @include flex-col;
-                @include sideBoxFixed-style;
-                font-size: 25px;
-                color: #65BC7B;
-                font-weight: 600;
-                sup{
-                    font-size: 12px;               
-                }
-                span:nth-child(2){
-                    font-size: 12px;
-                    color: $brandRifle;
-                }
-            }
+        .book-release{
+          width: 50%;
+
+          h3{
+            @include lighter-journal;
+            margin-top: 55px;
+            font-size: 25px;
+            color: $brandRifle;
+          }
+
+          h4{
+            @include pageSubtitleH4Gold;
+          }
+
+          p{
+            margin-top: 12px;
+            padding-right: 50px;
+            color: $brandGrey;
+          }
         }
 
-    }
+      }
 
-    .jumbotron-two{
+      .buy-on-sec{
         @include flex-row;
-        width: 90%;
-        height: calc(100% - 370px);
-        align-self: flex-end;
-        justify-content: flex-end;
-        
-        .journal-desc{
-            height: 100%;
-            width: 55%;
-            color: $brandWhite;
-            @include headerAnimation;
-          
-            h2{
-                @include lighter-journal;
-                font-size: 40px;
-                margin-bottom: 40px;
-                width: 650px;
-                color: $brandWhite;
-            }
-            span{
-                color: $brandPumice;
-                font-size: 25px;
-                font-family: $pageFont;
-            }
-            
-            .jumbotron-controls{
-                @include flex-row;
-                margin-top: 50px;
-                width: 120px;
-                height: 50px;
-                justify-content: space-between;
+        @include flex-centred;
+        width: 100%;
+        height: 30%;
+        background-color: $brandWhite;
 
-                .left{
-                    @include flex-row;
-                    @include jumbotron-controls;
-                    border-bottom-left-radius:5px ;
-                    border-top-left-radius: 5px;
-                }
-                .right{
-                    @include flex-row;
-                    @include jumbotron-controls;
-                    border-bottom-right-radius:5px ;
-                    border-top-right-radius: 5px;
-                }
+        &-button-container{
+          @include flex-row;
+          width: 80%;
+          height: 45%;
+          text-align: center;
+
+          i{
+            margin-right: 10px;
+            vertical-align: middle;
+          }
+
+          .button-appstore{
+            @include buy-button-style;
+            border-bottom-left-radius:5px ;
+            border-top-left-radius: 5px;
+
+            &:hover{
+              @include buy-button-hover;
             }
+
+          }
+          .button-amazon{
+            @include buy-button-style;
+            border-bottom-right-radius:5px ;
+            border-top-right-radius: 5px;
+
+            &:hover{
+              @include buy-button-hover;
+            }
+          }
         }
-        .lastet-book{
-            @include flex-col;
-            align-self: flex-end;
-            height: 96%;
-            width: 35%;
-
-            .book-image{
-                @include flex-row;
-                width: 100%;
-                height: 70%;
-                background-color:$brandWhite;
-
-                &-container{
-                    @include flex-row;
-                    align-items: flex-end;
-                    justify-content: flex-end;
-                    width: 50%;                 
-
-                    img{
-                        width: 70%;
-                    }
-                }
-               
-                .book-release{
-                    width: 50%;  
-                    
-                    h3{
-                        @include lighter-journal;
-                        margin-top: 55px;
-                        font-size: 25px;
-                        color: $brandRifle;
-                    }
-                    h4{
-                       @include pageSubtitleH4Gold;
-                    }
-                    p{
-                        margin-top: 12px;
-                        padding-right: 50px;
-                        color: $brandGrey;
-                    }
-                }
-                
-            }
-            .buy-on-sec{
-                @include flex-row;
-                @include flex-centred;
-                width: 100%;
-                height: 30%;
-                background-color: $brandWhite;
-
-                &-button-container{
-                    @include flex-row;
-                    width: 80%;
-                    height: 45%;
-                    text-align: center;
-                    i{
-                        margin-right: 10px;
-                        vertical-align: middle;
-                    }
-
-                    .button-appstore{
-                        @include buy-button-style;
-                        border-bottom-left-radius:5px ;
-                        border-top-left-radius: 5px;
-                        &:hover{
-                           @include buy-button-hover;
-                        }
-                       
-                    }
-                    .button-amazon{
-                        @include buy-button-style;
-                        border-bottom-right-radius:5px ;
-                        border-top-right-radius: 5px;
-                        &:hover{
-                            @include buy-button-hover;
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 
 }
 //header end
 
 //main start
 main{
+  @include flex-col;
+  font-family: $pageFont;
+
+  .author-meet-sec{
     @include flex-col;
-    font-family: $pageFont;
-    .author-meet-sec{
-        @include flex-col;
-        width: 70%;
-        height: 400px;
-        align-self: center;
-        justify-content: center;
+    width: 70%;
+    height: 400px;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+
+    h2{
+      @include coursiveTitle;
+      font-size: 75px;
+      margin: 35px 0px;
+    }
+
+    p{
+      font-size: 23px;
+      color: $brandRifle;
+      line-height: 45px;
+    }
+
+    button{
+      @include page-button-style;
+      font-weight: bold;
+      transition: background-color 330ms ease-in-out;
+      &:hover{
+        background-color: $brandLagoon;
+      }
+    }
+  }
+
+  .commercial-partner-sec{
+    @include flex-row;
+    width: 100%;
+    height: 140px;
+    justify-content: center;
+    margin-top: 80px;
+    background-color: $brandPink;
+
+    ul{
+      @include flex-row;
+      width: 50%;
+      height: 100%;
+      list-style: none;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+  .audiobook-sec{
+    @include flex-row;
+    width: 100%;
+    height: 700px;
+    background-image: url("../img/banner/banner.jpg");
+    background-position: top;
+    background-size: cover;
+    align-items: flex-end;
+    justify-content: center;
+
+    &-content{
+      @include flex-row;
+      width: 70%;
+      height: 90%;
+
+      &-image{
+        width: 45%;
+        height: 100%;
+
+        img{
+          height:100%;
+          width: 100%;
+        }
+      }
+
+      &-desc{
+        width: 40%;
+        height: 70%;
+        align-self: flex-end;
         text-align: center;
+
         h2{
-           @include coursiveTitle;
-            font-size: 75px;
-            margin: 35px 0px;
+          @include lighter-journal;
+          font-size: 35px;
+          color: $brandWhite;
         }
+
+        h4{
+          @include pageSubtitleH4Gold;
+          font-size: 20px;
+        }
+
         p{
-            font-size: 23px;
-            color: $brandRifle;
-            line-height: 45px;
+          margin-top: 18px;
+          font-size: 18px;
+          color: $brandLightGrey;
+
         }
-        button{
-           @include page-button-style;
-           font-weight: bold;
-           transition: background-color 330ms ease-in-out;
-           &:hover{
-            background-color: $brandLagoon;
-           }
-        }
-    }
-    .commercial-partner-sec{
-        @include flex-row;
-        width: 100%;
-        height: 140px;
-        justify-content: center;
-        margin-top: 80px;
-        background-color: $brandPink;
+
         ul{
-            @include flex-row;
-            width: 50%;
-            height: 100%;
-            list-style: none;
-            justify-content: space-around;
-            align-items: center;
+          @include flex-row;
+          margin-top: 40px;
+          width: 100%;
+          list-style: none;
+          justify-content: space-around;
+          align-items: center;
         }
+      }
     }
-    .audiobook-sec{
+  }
+
+  .crities-say-section{
+    @include flex-col;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+
+    &-header{
+      @include flex-row;
+      justify-content: space-around;
+      width: 100%;
+      height: 160px;
+
+      .crities-header-title{
+        width: 40%;
+
+        h2{
+          @include lighter-journal;
+          margin-top: 15px;
+          font-size: 40px;
+        }
+
+        h4{
+          @include pageSubtitleH4Gold;
+          color: $brandCyano;
+        }
+      }
+
+      .crities-header-button{
         @include flex-row;
-        width: 100%;
-        height: 700px;
-        background-image: url("../img/banner/banner.jpg");
-        background-position: top;
-        background-size: cover;
+        width: 20%;
+        align-self: center;
+        justify-content: flex-end;
+
+        button{
+          @include page-button-style;
+          width: 200px;
+          font-weight: bold;
+          background-color: $brandGold;
+          margin-top: 0;
+          transition: background-color 330ms ease-in-out;
+
+          &:hover{
+            background-color: $brandSaffronLight;
+          }
+        }
+      }
+
+    }
+
+    &-content{
+      width: 80%;
+      height: 700px;
+      @include flex-row;
+      justify-content: space-between;
+
+      &-article{
+        @include flex-col;
+        @include flex-centred;
+        @include image-bg-centred-c;
+        width: 60%;
+        height: 100%;
+        background-image: url("../img/thumbetestimonial/testimonial2-2x.jpg");
+        border-bottom-right-radius: 100px;
+        color: $brandWhite;
+        transition: transform 330ms ease-in-out;
+
+        &:hover{
+          transform: scale(1.1);
+        }
+
+        &:hover h2,&:hover h4,&:hover p,&:hover div{
+          transform: scale(0.9);
+        }
+
+        h2{
+          @include lighter-journal;
+          font-size: 50px;
+          padding-bottom: 40px;
+          border-bottom: 1px solid $brandLightGrey;
+          transition: transform 330ms ease-in-out;
+        }
+
+        h4{
+          font-size: 25px;
+          padding-top: 30px;
+          margin-top: 30px;
+          transition: transform 330ms ease-in-out;
+        }
+
+        p{
+          padding: 20px 150px;
+          font-size: 18px;
+          transition: transform 330ms ease-in-out;
+        }
+
+        div{
+          align-self: flex-start;
+          margin-left: 150px;
+          font-weight: bold;
+          transition: transform 330ms ease-in-out;
+
+          span:last-child{
+            color: $brandCyano;
+          }
+
+          img{
+            vertical-align: middle;
+            margin-right: 15px;
+          }
+        }
+      }
+
+      &-journal{
+        @include flex-col;
+        width: 35%;
+        height: 100%;
+        justify-content: space-around;
         align-items: flex-end;
+
+        div:nth-child(2),div:nth-child(4){
+          align-self: flex-start;
+          color: $brandLightGrey;
+          font-weight: bold;
+
+          img{
+            vertical-align: middle;
+            margin-right: 10px;
+          }
+
+          span{
+            color: $brandGrey;
+          }
+        }
+
+        .crities-journal-first,.crities-journal-second{
+          @include crities-journal-style;
+
+          h2{
+            @include lighter-journal;
+          }
+
+          p{
+            padding-top: 20px;
+            color: $brandGrey;
+          }
+
+          i{
+            position: absolute;
+            bottom: -22px;
+            left: 40px;
+            font-size: 40px;
+            color: $brandPink;
+          }
+        }
+      }
+    }
+  }
+
+  .upcoming-event-sec{
+    @include flex-col;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    align-items: center;
+    width: 100%;
+    background-color: $brandPink;
+
+    &-header{
+      @include flex-col;
+      @include flex-centred;
+      width: 80%;
+      height: 160px;
+
+      h2{
+        @include lighter-journal;
+        font-size: 35px;
+      }
+
+      h4{
+        @include pageSubtitleH4Gold;
+        margin-top: 10px;
+      }
+    }
+
+    &-content{
+      @include flex-row;
+      justify-content: space-between;
+      width: 80%;
+      height: 450px;
+
+      .event-one,.event-two,.event-three{
+        @include events-style;
+        @include flex-col;
+        background-color: $brandWhite;
+
+        img{
+          transition: opacity 330ms ease-in-out;
+        }
+
+        h3{
+          align-self: center;
+          padding: 15px 0px;
+          width: 80%;
+          font-weight: normal;
+          border-bottom: 1px inset $brandStone;
+        }
+
+        p{
+          padding-top: 20px;
+          color: $brandGrey;
+        }
+
+        &:hover img{
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  .newsletter-sec{
+    @include flex-row;
+    @include flex-centred;
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/banner/banner-2.jpg");
+    background-position: top;
+    background-size: cover;
+
+    &-content{
+      @include flex-col;
+      height: 60%;
+      width: 40%;
+
+      h2{
+        @include lighter-journal;
+        font-size: 40px;
+        text-align: center;
+        color: $brandWhite;
+
+      }
+
+      h4{
+        @include pageSubtitleH4Gold;
+        text-align: center;
+      }
+
+      div{
+        align-self: center;
+
+        input{
+          height: 45px;
+          width: 250px;
+          border: none;
+          border-radius: 5px;
+          margin-right: 10px;
+
+          &::placeholder{
+            padding-left: 10px;
+          }
+        }
+
+        button{
+          @include page-button-style;
+          width: 100px;
+          transition: background-color 330ms ease-in-out;
+
+          &:hover{
+            background-color: $brandLagoon;
+          }
+        }
+      }
+
+      p{
+        text-align: center;
+        color: $brandLightGrey;
+        margin-top: 25px;
+      }
+    }
+  }
+
+  .dig-deeper-sec{
+    @include flex-col;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    background-color: $brandWhite;
+
+    &-header{
+      @include flex-col;
+      @include flex-centred;
+      width: 80%;
+      height: 160px;
+
+      h2{
+        @include lighter-journal;
+        font-size: 35px;
+      }
+
+      h4{
+        @include pageSubtitleH4Gold;
+        color: $brandCyano;
+      }
+    }
+
+    &-content{
+      @include flex-row;
+      justify-content: space-between;
+      width: 80%;
+      height: 500px;
+
+      .fact-one,.fact-two,.fact-three{
+        @include events-style;
+        @include flex-col;
+        justify-content: flex-end;
+        transition: transform 250ms ease-in-out;
+        opacity: 0.9;
+        border-bottom-right-radius: 30px ;
+
+        h2{
+          padding: 15px 0px;
+          font-size: 30px;
+          color: $brandWhite;
+          font-weight: normal;
+          text-shadow: 1px 1px 0px #000;
+        }
+
+        h4{
+          color: $brandPrincipalColor;
+          margin: 15px 0px 40px 0px;
+        }
+
+        div{
+          width: 60px;
+          height: 2px;
+          background-color: $brandLightGrey;
+          align-self: center;
+        }
+
+        &:hover{
+          box-shadow: 1px 1px 10px $brandGrey;
+          transform: scale(1.1);
+          opacity: 1;
+        }
+      }
+
+      .fact-one{
+        background-image: url("../img/boxes/box-1.jpg");
+      }
+
+      .fact-two{
+        background-image: url("../img/boxes/box-4.jpg");
+        background-size: cover;
+      }
+
+      .fact-three{
+        background-image: url("../img/boxes/box-3.jpg");
+      }
+    }
+  }
+
+  .recent-articles-section{
+    @include flex-col;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+    height: 880px;
+    background-color: $brandPink;
+    margin-top: 70px;
+
+    &-header{
+      @include flex-row;
+      justify-content: space-around;
+      width: 100%;
+      height: 140px;
+
+      .articles-header-title{
+        width: 40%;
+
+        h2{
+          @include lighter-journal;
+          margin-top: 15px;
+          font-size: 40px;
+        }
+
+        h4{
+          @include pageSubtitleH4Gold;
+          margin-top: 10px;
+          color: $brandCyano;
+        }
+      }
+      .articles-header-button{
+        @include flex-row;
+        width: 20%;
+        align-self: center;
+        justify-content: flex-end;
+
+        button{
+          @include page-button-style;
+          width: 200px;
+          background-color: $brandGold;
+          margin-top: 0;
+          margin-right: 100px;
+          transition:  background-color 330ms ease-in-out;
+
+          &:hover{
+            background-color: $brandSaffronLight;
+          }
+        }
+      }
+    }
+
+    &-content{
+      width: 70%;
+      height: 650px;
+      @include flex-row;
+      justify-content: space-between;
+
+      &-creativity{
+        @include flex-col;
+        background-color: $brandWhite;
+        width: 65%;
+        height: 100%;
         justify-content: center;
 
-        &-content{
-            @include flex-row;
-            width: 70%;
-            height: 90%;
+        img{
+          align-self: center;
+          width: 80%;
+          transition: opacity 330ms ease-in-out;
 
-            &-image{
-                width: 45%;
-                height: 100%;
-                img{
-                    height:100%;
-                    width: 100%;
-                }
-            }
-            &-desc{
-               width: 40%;
-               height: 70%;
-               align-self: flex-end;
-               text-align: center;
-               h2{
-                   @include lighter-journal;
-                   font-size: 35px;
-                   color: $brandWhite;
-               }
-               h4{
-                   @include pageSubtitleH4Gold;
-                   font-size: 20px;
-               }
-               p{
-                   margin-top: 18px;
-                   font-size: 18px;
-                   color: $brandLightGrey;
-
-               }
-
-               ul{
-                @include flex-row;
-                margin-top: 40px;
-                width: 100%;
-                list-style: none;
-                justify-content: space-around;
-                align-items: center;
-               }
-            }
+          &:hover{
+            opacity: 0.9;
+          }
         }
-    }
-    .crities-say-section{
+
+        h3{
+          margin-top: 20px;
+          color: $brandRifle;
+        }
+
+        h3,span,p{
+          padding: 10px 90px;
+        }
+
+        span{
+          font-size: 12px;
+        }
+
+        p,span{
+          color: $brandGrey;
+        }
+      }
+
+      &-booklist{
         @include flex-col;
         align-items: center;
-        width: 100%;
-        margin-top: 50px;
-        &-header{
-            @include flex-row;
-            justify-content: space-around;
-            width: 100%;
-            height: 160px;
-
-            .crities-header-title{
-                width: 40%;
-                h2{
-                    @include lighter-journal;
-                    margin-top: 15px;
-                    font-size: 40px;
-                }
-                h4{
-                    @include pageSubtitleH4Gold;
-                    color: $brandCyano;
-                }
-            }
-            .crities-header-button{
-                @include flex-row;
-                width: 20%;
-                align-self: center;
-                justify-content: flex-end;
-                button{
-                    @include page-button-style;
-                    width: 200px;
-                    font-weight: bold;
-                    background-color: $brandGold;
-                    margin-top: 0;
-                    transition: background-color 330ms ease-in-out;
-                    &:hover{
-                        background-color: $brandSaffronLight;
-                    }
-                }
-            }
-
-        }
-        &-content{
-            width: 80%;
-            height: 700px;
-            @include flex-row;
-            justify-content: space-between;
-            &-article{
-                @include flex-col;
-                @include flex-centred;
-                @include image-bg-centred-c;
-                width: 60%;
-                height: 100%;
-                background-image: url("../img/thumbetestimonial/testimonial2-2x.jpg");
-                border-bottom-right-radius: 100px;
-                color: $brandWhite;
-                transition: transform 330ms ease-in-out;
-                &:hover{
-                    transform: scale(1.1);
-                }
-                &:hover h2,&:hover h4,&:hover p,&:hover div{
-                    transform: scale(0.9);
-                }
-                
-                h2{
-                    @include lighter-journal;
-                    font-size: 50px;
-                    padding-bottom: 40px;
-                    border-bottom: 1px solid $brandLightGrey;
-                    transition: transform 330ms ease-in-out;
-                }
-                h4{
-                   font-size: 25px;
-                   padding-top: 30px;
-                   margin-top: 30px;
-                   transition: transform 330ms ease-in-out;
-                }
-                p{
-                    padding: 20px 150px;
-                    font-size: 18px;
-                    transition: transform 330ms ease-in-out;
-                }
-                div{
-                    align-self: flex-start;
-                    margin-left: 150px;
-                    font-weight: bold;
-                    transition: transform 330ms ease-in-out;
-                    span:last-child{
-                        color: $brandCyano;
-                    }
-                    img{
-                        vertical-align: middle;
-                        margin-right: 15px;
-                    }
-
-                }
-            }
-            &-journal{
-                @include flex-col;
-                width: 35%;
-                height: 100%;
-                justify-content: space-around;
-                align-items: flex-end;
-                
-                div:nth-child(2),div:nth-child(4){
-                    align-self: flex-start;
-                    color: $brandLightGrey;
-                    font-weight: bold;
-                    img{
-                        vertical-align: middle;
-                        margin-right: 10px;
-                    }
-                    span{        
-                            color: $brandGrey;
-                    }
-                }
-                .crities-journal-first,.crities-journal-second{
-                   @include crities-journal-style;
-                   h2{
-                    @include lighter-journal;
-                    }
-                    p{
-                    padding-top: 20px;
-                    color: $brandGrey;
-                    }
-                    i{
-                    position: absolute;
-                    bottom: -22px;
-                    left: 40px;
-                    font-size: 40px;
-                    color: $brandPink;
-                    }
-                  
-                }
-            }
-            
-        }
-    }
-    .upcoming-event-sec{
-        @include flex-col;
-        margin-top: 50px;
-        padding-bottom: 100px;
-        align-items: center;
-        width: 100%;
-        background-color: $brandPink;
-        &-header{
-            @include flex-col;
-            @include flex-centred;
-            width: 80%;
-            height: 160px;
-           
-            h2{
-                @include lighter-journal;
-                font-size: 35px;
-            }
-            h4{
-                @include pageSubtitleH4Gold;
-                margin-top: 10px;
-            }
-        }
-        &-content{
-            @include flex-row;
-            justify-content: space-between;
-            width: 80%;
-            height: 450px;
-            
-            .event-one,.event-two,.event-three{
-             @include events-style;
-             @include flex-col;
-             background-color: $brandWhite;
-             img{               
-                 transition: opacity 330ms ease-in-out;
-             }
-             h3{
-                 align-self: center;
-                 padding: 15px 0px;
-                 width: 80%; 
-                 font-weight: normal;
-                 border-bottom: 1px inset $brandStone;
-             }
-             p{
-                 padding-top: 20px;
-                 color: $brandGrey;
-             }
-             &:hover img{
-               opacity: 0.7;
-            }
-            }
-        }
-    }
-    .newsletter-sec{
-        @include flex-row;
-       @include flex-centred;
-        width: 100%;
-        height: 500px;
-        background-image: url("../img/banner/banner-2.jpg");
-        background-position: top;
-        background-size: cover;
-        &-content{
-            @include flex-col;
-            height: 60%;
-            width: 40%;
-            h2{
-                @include lighter-journal;
-                font-size: 40px;            
-                text-align: center;
-                color: $brandWhite;
-               
-            }
-            h4{
-                @include pageSubtitleH4Gold;
-                text-align: center;
-            }
-            div{
-              align-self: center;
-              input{
-                  height: 45px;
-                  width: 250px;
-                  border: none;
-                  border-radius: 5px;
-                  margin-right: 10px;
-                  &::placeholder{
-                      padding-left: 10px;
-                  }
-              }
-              button{
-                  @include page-button-style;
-                  width: 100px;
-                  transition: background-color 330ms ease-in-out;
-                  &:hover{
-                  background-color: $brandLagoon;
-                  }
-              }
-            }
-            p{
-               text-align: center;
-                color: $brandLightGrey;
-                margin-top: 25px;
-            }
-        }
-    }
-    .dig-deeper-sec{
-        @include flex-col;
-        align-items: center;
-        width: 100%;
-        margin-top: 50px;
+        justify-content: space-around;
         background-color: $brandWhite;
-        &-header{
-            @include flex-col;
-            @include flex-centred;
-            width: 80%;
-            height: 160px;
-           
-            h2{
-               @include lighter-journal;
-               font-size: 35px;
-            }
-            h4{
-              @include pageSubtitleH4Gold;
-              color: $brandCyano;
-            }
-        }
-        &-content{
-            @include flex-row;
-            justify-content: space-between;
-            width: 80%;
-            height: 500px;
-            
-            .fact-one,.fact-two,.fact-three{
-             @include events-style;
-             @include flex-col;
-             justify-content: flex-end;
-             transition: transform 250ms ease-in-out;
-             opacity: 0.9;
-             border-bottom-right-radius: 30px ;
-              h2{
-                 padding: 15px 0px;
-                 font-size: 30px;
-                 color: $brandWhite;
-                 font-weight: normal;
-                 text-shadow: 1px 1px 0px #000;
-              }
-              h4{
-                  color: $brandSaffron;
-                  margin: 15px 0px 40px 0px;
-              } 
-              div{
-                  width: 60px;
-                  height: 2px;
-                  background-color: $brandLightGrey;
-                  align-self: center;
-              }
-              &:hover{
-                  box-shadow: 1px 1px 10px $brandGrey;
-                  transform: scale(1.1);
-                  opacity: 1;
-              }       
-            }
-            .fact-one{
-                background-image: url("../img/boxes/box-1.jpg"); 
-            }
-            .fact-two{
-                background-image: url("../img/boxes/box-4.jpg");
-                background-size: cover;     
-            }
-            .fact-three{
-                background-image: url("../img/boxes/box-3.jpg");
-            }
-        }
-    }
-    .recent-articles-section{
-        @include flex-col;
-        align-items: center;
-        width: 100%;
-        padding-top: 50px;
-        height: 880px;
-        background-color: $brandPink;
-        margin-top: 70px;
-        &-header{
-            @include flex-row;
-            justify-content: space-around;
+        width: 32%;
+        height: 100%;
+        .booklist-one,.booklist-two{
+          @include booklist-style;
+
+          img{
             width: 100%;
-            height: 140px;
+          }
 
-            .articles-header-title{
-                width: 40%;
-                h2{
-                    @include lighter-journal;
-                    margin-top: 15px;
-                    font-size: 40px;
-                }
-                h4{
-                    @include pageSubtitleH4Gold;
-                    margin-top: 10px;
-                    color: $brandCyano;
-                }
-            }
-            .articles-header-button{
-                @include flex-row;
-                width: 20%;
-                align-self: center;
-                justify-content: flex-end;
-                button{
-                    @include page-button-style;
-                    width: 200px;
-                    background-color: $brandGold;
-                    margin-top: 0;
-                    margin-right: 100px;
-                    transition:  background-color 330ms ease-in-out;
-                    &:hover{
-                        background-color: $brandSaffronLight;
-                    }
-                }
-            }
+          h3{
+            padding: 10px 0px;
+            font-weight: normal;
+          }
 
+          span{
+            font-size: 14px;
+            color: $brandLightGrey;
+          }
         }
-        &-content{
-            width: 70%;
-            height: 650px;
-            @include flex-row;
-            justify-content: space-between;
-
-            &-creativity{
-                @include flex-col;
-                background-color: $brandWhite;
-                width: 65%;
-                height: 100%;
-                justify-content: center;
-                
-                img{
-                    align-self: center;
-                    width: 80%;
-                    transition: opacity 330ms ease-in-out;
-                    &:hover{
-                        opacity: 0.9;
-                    }
-                }
-                h3{
-                    margin-top: 20px;
-                    color: $brandRifle;
-                }
-                h3,span,p{
-                    padding: 10px 90px;
-                }
-                span{
-                    font-size: 12px;
-                }
-                p,span{
-                    color: $brandGrey;
-                }
-            }
-            &-booklist{
-                @include flex-col;
-                align-items: center;
-                justify-content: space-around;
-                background-color: $brandWhite;
-                width: 32%;
-                height: 100%;
-                .booklist-one,.booklist-two{
-                    @include booklist-style;
-                    img{
-                      width: 100%;
-                    }
-                    h3{
-                        padding: 10px 0px;
-                        font-weight: normal;
-                    }
-                    span{
-                        font-size: 14px;
-                        color: $brandLightGrey;
-                    }
-                }              
-            }           
-        }          
+      }
     }
-
+  }
 }
 //main end
 
 //footer start
 footer{
-    @include flex-col;
-    color: $brandWhite;
-    font-family: $pageFont;
-    justify-content: space-between;
+  @include flex-col;
+  color: $brandWhite;
+  font-family: $pageFont;
+  justify-content: space-between;
+  width: 100%;
+  height: 450px;
+  background-image: url("../img/footer/footer-3.jpg");
+  background-position: top;
+  background-size: cover;
+
+  .footer-sec-one{
+    @include flex-row;
     width: 100%;
-    height: 450px;
-    background-image: url("../img/footer/footer-3.jpg");
-    background-position: top;
-    background-size: cover;
-    .footer-sec-one{
-        @include flex-row;
-        width: 100%;
-        height: 70%;
-        justify-content: space-around;
-        &-first-menu,&-second-menu,&-third-menu{
-            @include flex-col;
-            padding: 30px;
-            width: 30%;
-            height: 100%;
-            h4{
-                margin-top: 40px;
-                font-size: 18px;
-                text-transform: uppercase;
-            }
-            ul{
-                list-style: none;
-            }
-            ul li{
-                margin: 20px 0px;
-                cursor: pointer;
-                transition: color 300ms ease-in-out;
-                &:hover{
-                    color: $brandSaffron;
-                }
-            }
-            p{
-                margin: 45px 0px;
-                width: 350px;
-                line-height: 25px;
-                color: $brandPumice;
-            }
-            i{
-                margin-right: 20px;
-                &:hover{
-                    color: $brandWhite;
-                }
-            }
-            .contacts-specs{
-                color: $brandPumice;
-                li span{
-                    color: $brandWhite;
-                }
-            }
-        }
-        &-logo{
-            @include flex-row;
-            justify-content: center;
-            width: 10%;
-            margin: 0px 90px;
-            height: 100%;
+    height: 70%;
+    justify-content: space-around;
 
-            img{
-                height: 50%;
-                align-self: center;
-            }
-        }
-    }
-    .footer-sec-two{
-        @include flex-row;
-        width: 100%;
-        height: 100px;
-        .footer-content{
-            @include flex-col;
-            align-items: center;
-            justify-content: flex-end;
-            width: 100%;
-            font-size: 14px;
-            div:first-child{
-                color: $brandLightGrey;
+    &-first-menu,&-second-menu,&-third-menu{
+      @include flex-col;
+      padding: 30px;
+      width: 30%;
+      height: 100%;
 
-                span{
-                    color: $brandWhite;
-                    cursor: pointer;
-                    font-weight: bold;
-                    transition: color 300ms ease-in-out;
-                    &:hover{
-                        color: $brandSaffron;
-                    }
-                }
-            }
-            .return-button{
-                @include flex-row;
-                @include flex-centred;
-                cursor: pointer;
-                align-self: flex-end;
-                margin-right: 150px;
-                border-top-left-radius: 2px;
-                border-top-right-radius: 2px;
-                width: 50px;
-                height: 35px;
-                background-color: $brandGrey;
-            }
-        }        
+      h4{
+        margin-top: 40px;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+
+      ul{
+        list-style: none;
+      }
+
+      ul li{
+        margin: 20px 0px;
+        cursor: pointer;
+        transition: color 300ms ease-in-out;
+
+        &:hover{
+          color: $brandPrincipalColor;
+        }
+      }
+
+      p{
+        margin: 45px 0px;
+        width: 350px;
+        line-height: 25px;
+        color: $brandPumice;
+      }
+
+      i{
+        margin-right: 20px;
+
+        &:hover{
+          color: $brandWhite;
+        }
+      }
+
+      .contacts-specs{
+        color: $brandPumice;
+
+        li span{
+          color: $brandWhite;
+        }
+      }
     }
+
+    &-logo{
+      @include flex-row;
+      justify-content: center;
+      width: 10%;
+      margin: 0px 90px;
+      height: 100%;
+
+      img{
+        height: 50%;
+        align-self: center;
+      }
+    }
+  }
+  .footer-sec-two{
+    @include flex-row;
+    width: 100%;
+    height: 100px;
+
+    .footer-content{
+      @include flex-col;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      font-size: 14px;
+
+      div:first-child{
+        color: $brandLightGrey;
+
+        span{
+          color: $brandWhite;
+          cursor: pointer;
+          font-weight: bold;
+          transition: color 300ms ease-in-out;
+
+          &:hover{
+            color: $brandPrincipalColor;
+          }
+        }
+      }
+
+      .return-button{
+        @include flex-row;
+        @include flex-centred;
+        cursor: pointer;
+        align-self: flex-end;
+        margin-right: 150px;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        width: 50px;
+        height: 35px;
+        background-color: $brandGrey;
+      }
+    }
+  }
 }
 // footer end
