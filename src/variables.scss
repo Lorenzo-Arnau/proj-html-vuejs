@@ -99,4 +99,16 @@
         transform: translateY(-130px);
         opacity: 0;
       }
+    }
+@mixin image-bg-centred-c{
+    background-position: center;
+    background-size: cover;
+}
+@mixin flex-centred {
+    align-items: center;
+    justify-content: center;
+}
+@mixin lighter-journal {
+    font-weight: lighter;
+    font-family: $journalFont;
 }

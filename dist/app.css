@@ -7,11 +7,11 @@
 header {
   display: flex;
   flex-direction: column;
+  background-position: center;
+  background-size: cover;
   font-family: "DM Sans", sans-serif;
   width: 100%;
   height: 800px;
-  background-position: center;
-  background-size: cover;
 }
 header .navbar {
   display: flex;
@@ -49,10 +49,10 @@ header .navbar ul li:hover a {
 header .navbar-logo {
   display: flex;
   flex-direction: row;
-  height: 100%;
-  width: 250px;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  width: 250px;
 }
 header .navbar-menu {
   width: 50%;
@@ -134,13 +134,14 @@ header .jumbotron-one .demo-price .price {
   box-shadow: 1px 1px 20px #434343;
   font-size: 25px;
   color: #65BC7B;
+  font-weight: 600;
 }
 header .jumbotron-one .demo-price .price sup {
   font-size: 12px;
 }
 header .jumbotron-one .demo-price .price span:nth-child(2) {
   font-size: 12px;
-  color: #030303;
+  color: #1D1C1A;
 }
 header .jumbotron-two {
   display: flex;
@@ -154,7 +155,6 @@ header .jumbotron-two .journal-desc {
   height: 100%;
   width: 55%;
   color: #FFFFFF;
-  font-family: "DM Serif Display", serif;
 }
 header .jumbotron-two .journal-desc .slide-fade-enter-active {
   transition: all 0.8s ease-in-out;
@@ -167,10 +167,11 @@ header .jumbotron-two .journal-desc .slide-fade-enter, header .jumbotron-two .jo
   opacity: 0;
 }
 header .jumbotron-two .journal-desc h2 {
+  font-weight: lighter;
+  font-family: "DM Serif Display", serif;
   font-size: 40px;
   margin-bottom: 40px;
   width: 650px;
-  font-weight: lighter;
   color: #FFFFFF;
 }
 header .jumbotron-two .journal-desc span {
@@ -236,11 +237,11 @@ header .jumbotron-two .lastet-book .book-image .book-release {
   width: 50%;
 }
 header .jumbotron-two .lastet-book .book-image .book-release h3 {
-  margin-top: 55px;
-  font-size: 25px;
-  color: #030303;
   font-weight: lighter;
   font-family: "DM Serif Display", serif;
+  margin-top: 55px;
+  font-size: 25px;
+  color: #1D1C1A;
 }
 header .jumbotron-two .lastet-book .book-image .book-release h4 {
   margin-top: 25px;
@@ -256,11 +257,11 @@ header .jumbotron-two .lastet-book .book-image .book-release p {
 header .jumbotron-two .lastet-book .buy-on-sec {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 30%;
   background-color: #FFFFFF;
-  align-items: center;
-  justify-content: center;
 }
 header .jumbotron-two .lastet-book .buy-on-sec-button-container {
   display: flex;
@@ -321,8 +322,8 @@ main .author-meet-sec {
   display: flex;
   flex-direction: column;
   width: 70%;
-  align-self: center;
   height: 400px;
+  align-self: center;
   justify-content: center;
   text-align: center;
 }
@@ -335,7 +336,7 @@ main .author-meet-sec h2 {
 }
 main .author-meet-sec p {
   font-size: 23px;
-  color: #030303;
+  color: #1D1C1A;
   line-height: 45px;
 }
 main .author-meet-sec button {
@@ -404,10 +405,10 @@ main .audiobook-sec-content-desc {
   text-align: center;
 }
 main .audiobook-sec-content-desc h2 {
+  font-weight: lighter;
+  font-family: "DM Serif Display", serif;
   font-size: 35px;
   color: #FFFFFF;
-  font-family: "DM Serif Display", serif;
-  font-weight: lighter;
 }
 main .audiobook-sec-content-desc h4 {
   margin-top: 25px;
@@ -448,8 +449,8 @@ main .crities-say-section-header .crities-header-title {
   width: 40%;
 }
 main .crities-say-section-header .crities-header-title h2 {
+  font-weight: lighter;
   font-family: "DM Serif Display", serif;
-  font-weight: normal;
   margin-top: 15px;
   font-size: 40px;
 }
@@ -498,11 +499,11 @@ main .crities-say-section-content-article {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-position: center;
+  background-size: cover;
   width: 60%;
   height: 100%;
   background-image: url("../img/thumbetestimonial/testimonial2-2x.jpg");
-  background-size: cover;
-  background-position: center;
   border-bottom-right-radius: 100px;
   color: #FFFFFF;
   transition: transform 330ms ease-in-out;
@@ -514,10 +515,10 @@ main .crities-say-section-content-article:hover h2, main .crities-say-section-co
   transform: scale(0.9);
 }
 main .crities-say-section-content-article h2 {
+  font-weight: lighter;
+  font-family: "DM Serif Display", serif;
   font-size: 50px;
   padding-bottom: 40px;
-  font-weight: normal;
-  font-family: "DM Serif Display", serif;
   border-bottom: 1px solid #868586;
   transition: transform 330ms ease-in-out;
 }
@@ -574,8 +575,8 @@ main .crities-say-section-content-journal .crities-journal-first, main .crities-
   position: relative;
 }
 main .crities-say-section-content-journal .crities-journal-first h2, main .crities-say-section-content-journal .crities-journal-second h2 {
-  font-family: "DM Serif Display", serif;
   font-weight: lighter;
+  font-family: "DM Serif Display", serif;
 }
 main .crities-say-section-content-journal .crities-journal-first p, main .crities-say-section-content-journal .crities-journal-second p {
   padding-top: 20px;
@@ -600,15 +601,15 @@ main .upcoming-event-sec {
 main .upcoming-event-sec-header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 80%;
   height: 160px;
 }
 main .upcoming-event-sec-header h2 {
+  font-weight: lighter;
   font-family: "DM Serif Display", serif;
   font-size: 35px;
-  font-weight: lighter;
 }
 main .upcoming-event-sec-header h4 {
   margin-top: 25px;
@@ -655,8 +656,8 @@ main .upcoming-event-sec-content .event-one:hover img, main .upcoming-event-sec-
 main .newsletter-sec {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 500px;
   background-image: url("../img/banner/banner-2.jpg");
@@ -670,10 +671,10 @@ main .newsletter-sec-content {
   width: 40%;
 }
 main .newsletter-sec-content h2 {
-  font-size: 40px;
+  font-weight: lighter;
   font-family: "DM Serif Display", serif;
+  font-size: 40px;
   text-align: center;
-  font-weight: normal;
   color: #FFFFFF;
 }
 main .newsletter-sec-content h4 {
@@ -734,15 +735,15 @@ main .dig-deeper-sec {
 main .dig-deeper-sec-header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 80%;
   height: 160px;
 }
 main .dig-deeper-sec-header h2 {
+  font-weight: lighter;
   font-family: "DM Serif Display", serif;
   font-size: 35px;
-  font-weight: normal;
 }
 main .dig-deeper-sec-header h4 {
   margin-top: 25px;
@@ -825,8 +826,8 @@ main .recent-articles-section-header .articles-header-title {
   width: 40%;
 }
 main .recent-articles-section-header .articles-header-title h2 {
+  font-weight: lighter;
   font-family: "DM Serif Display", serif;
-  font-weight: normal;
   margin-top: 15px;
   font-size: 40px;
 }
@@ -889,7 +890,7 @@ main .recent-articles-section-content-creativity img:hover {
 }
 main .recent-articles-section-content-creativity h3 {
   margin-top: 20px;
-  color: #030303;
+  color: #1D1C1A;
 }
 main .recent-articles-section-content-creativity h3, main .recent-articles-section-content-creativity span, main .recent-articles-section-content-creativity p {
   padding: 10px 90px;
@@ -1027,8 +1028,8 @@ footer .footer-sec-two .footer-content .return-button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  cursor: pointer;
   justify-content: center;
+  cursor: pointer;
   align-self: flex-end;
   margin-right: 150px;
   border-top-left-radius: 2px;

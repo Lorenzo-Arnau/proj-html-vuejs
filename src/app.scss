@@ -7,11 +7,10 @@
 //header start
 header{
     @include flex-col;
+    @include image-bg-centred-c;
     font-family: $pageFont;
     width: 100%;
     height: 800px;
-    background-position: center;
-    background-size: cover;
 
     .navbar{
         @include flex-row;
@@ -46,11 +45,9 @@ header{
 
         &-logo{
             @include flex-row;
+            @include flex-centred;
             height: 100%;
-            width: 250px;
-            align-items: center;
-            justify-content: center;
-            
+            width: 250px;       
         }
         &-menu{
             width: 50%;
@@ -105,13 +102,13 @@ header{
                 @include sideBoxFixed-style;
                 font-size: 25px;
                 color: #65BC7B;
+                font-weight: 600;
                 sup{
-                    font-size: 12px;
-                    
+                    font-size: 12px;               
                 }
                 span:nth-child(2){
                     font-size: 12px;
-                    color: $brandBlack;
+                    color: $brandRifle;
                 }
             }
         }
@@ -129,14 +126,13 @@ header{
             height: 100%;
             width: 55%;
             color: $brandWhite;
-            font-family: $journalFont;
             @include headerAnimation;
           
             h2{
+                @include lighter-journal;
                 font-size: 40px;
                 margin-bottom: 40px;
                 width: 650px;
-                font-weight: lighter;
                 color: $brandWhite;
             }
             span{
@@ -193,11 +189,10 @@ header{
                     width: 50%;  
                     
                     h3{
+                        @include lighter-journal;
                         margin-top: 55px;
                         font-size: 25px;
-                        color: $brandBlack;
-                        font-weight: lighter;
-                        font-family: $journalFont;
+                        color: $brandRifle;
                     }
                     h4{
                        @include pageSubtitleH4Gold;
@@ -212,11 +207,10 @@ header{
             }
             .buy-on-sec{
                 @include flex-row;
+                @include flex-centred;
                 width: 100%;
                 height: 30%;
                 background-color: $brandWhite;
-                align-items: center;
-                justify-content: center;
 
                 &-button-container{
                     @include flex-row;
@@ -260,8 +254,8 @@ main{
     .author-meet-sec{
         @include flex-col;
         width: 70%;
-        align-self: center;
         height: 400px;
+        align-self: center;
         justify-content: center;
         text-align: center;
         h2{
@@ -271,7 +265,7 @@ main{
         }
         p{
             font-size: 23px;
-            color: $brandBlack;
+            color: $brandRifle;
             line-height: 45px;
         }
         button{
@@ -328,10 +322,9 @@ main{
                align-self: flex-end;
                text-align: center;
                h2{
+                   @include lighter-journal;
                    font-size: 35px;
                    color: $brandWhite;
-                   font-family: $journalFont;
-                   font-weight: lighter
                }
                h4{
                    @include pageSubtitleH4Gold;
@@ -369,8 +362,7 @@ main{
             .crities-header-title{
                 width: 40%;
                 h2{
-                    font-family: $journalFont;
-                    font-weight: normal;
+                    @include lighter-journal;
                     margin-top: 15px;
                     font-size: 40px;
                 }
@@ -405,13 +397,11 @@ main{
             justify-content: space-between;
             &-article{
                 @include flex-col;
-                align-items: center;
-                justify-content: center;
+                @include flex-centred;
+                @include image-bg-centred-c;
                 width: 60%;
                 height: 100%;
                 background-image: url("../img/thumbetestimonial/testimonial2-2x.jpg");
-                background-size: cover;
-                background-position: center;
                 border-bottom-right-radius: 100px;
                 color: $brandWhite;
                 transition: transform 330ms ease-in-out;
@@ -423,10 +413,9 @@ main{
                 }
                 
                 h2{
+                    @include lighter-journal;
                     font-size: 50px;
                     padding-bottom: 40px;
-                    font-weight: normal;
-                    font-family: $journalFont;
                     border-bottom: 1px solid $brandLightGrey;
                     transition: transform 330ms ease-in-out;
                 }
@@ -478,8 +467,7 @@ main{
                 .crities-journal-first,.crities-journal-second{
                    @include crities-journal-style;
                    h2{
-                    font-family: $journalFont;
-                    font-weight: lighter;
+                    @include lighter-journal;
                     }
                     p{
                     padding-top: 20px;
@@ -507,15 +495,13 @@ main{
         background-color: $brandPink;
         &-header{
             @include flex-col;
-            justify-content: center;
-            align-items: center;
+            @include flex-centred;
             width: 80%;
             height: 160px;
            
             h2{
-                font-family: $journalFont;
+                @include lighter-journal;
                 font-size: 35px;
-                font-weight: lighter;
             }
             h4{
                 @include pageSubtitleH4Gold;
@@ -554,8 +540,7 @@ main{
     }
     .newsletter-sec{
         @include flex-row;
-        justify-content: center;
-        align-items: center;
+       @include flex-centred;
         width: 100%;
         height: 500px;
         background-image: url("../img/banner/banner-2.jpg");
@@ -566,10 +551,9 @@ main{
             height: 60%;
             width: 40%;
             h2{
-                font-size: 40px;
-                font-family: $journalFont;
+                @include lighter-journal;
+                font-size: 40px;            
                 text-align: center;
-                font-weight: normal;
                 color: $brandWhite;
                
             }
@@ -613,15 +597,13 @@ main{
         background-color: $brandWhite;
         &-header{
             @include flex-col;
-            justify-content: center;
-            align-items: center;
+            @include flex-centred;
             width: 80%;
             height: 160px;
            
             h2{
-               font-family: $journalFont;
+               @include lighter-journal;
                font-size: 35px;
-               font-weight: normal;
             }
             h4{
               @include pageSubtitleH4Gold;
@@ -693,8 +675,7 @@ main{
             .articles-header-title{
                 width: 40%;
                 h2{
-                    font-family: $journalFont;
-                    font-weight: normal;
+                    @include lighter-journal;
                     margin-top: 15px;
                     font-size: 40px;
                 }
@@ -746,7 +727,7 @@ main{
                 }
                 h3{
                     margin-top: 20px;
-                    color: $brandBlack;
+                    color: $brandRifle;
                 }
                 h3,span,p{
                     padding: 10px 90px;
@@ -880,9 +861,8 @@ footer{
             }
             .return-button{
                 @include flex-row;
-                align-items: center;
+                @include flex-centred;
                 cursor: pointer;
-                justify-content: center;
                 align-self: flex-end;
                 margin-right: 150px;
                 border-top-left-radius: 2px;
@@ -891,9 +871,7 @@ footer{
                 height: 35px;
                 background-color: $brandGrey;
             }
-        }
-        
-        
+        }        
     }
 }
 // footer end
